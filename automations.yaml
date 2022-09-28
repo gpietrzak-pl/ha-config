@@ -1,0 +1,100 @@
+- id: '1647813687807'
+  alias: Wilgotnośc +65% Reku odśwież
+  description: ''
+  trigger:
+  - type: humidity
+    platform: device
+    device_id: 3604db52f6e50ba9d1b95ec5bfe350e8
+    entity_id: sensor.lumi_lumi_weather_dc043202_humidity
+    domain: sensor
+    above: 65
+    for:
+      hours: 0
+      minutes: 1
+      seconds: 0
+  condition: []
+  action:
+  - type: turn_on
+    device_id: 116a87afa99d07bf350214bd934fd124
+    entity_id: light.tz3000_excgg5kb_ts0004_d23f25cf_on_off
+    domain: light
+  mode: single
+- id: '1647813829865'
+  alias: Wilgotność -63% Reku wyłącz odśwież
+  description: ''
+  trigger:
+  - type: humidity
+    platform: device
+    device_id: 3604db52f6e50ba9d1b95ec5bfe350e8
+    entity_id: sensor.lumi_lumi_weather_dc043202_humidity
+    domain: sensor
+    below: 63
+    for:
+      hours: 0
+      minutes: 1
+      seconds: 0
+  condition: []
+  action:
+  - type: turn_off
+    device_id: 116a87afa99d07bf350214bd934fd124
+    entity_id: light.tz3000_excgg5kb_ts0004_d23f25cf_on_off
+    domain: light
+  mode: single
+- id: '1662313814830'
+  alias: Pilot Hue 60min
+  description: ''
+  trigger:
+  - device_id: 49af518e1df530edddd3317f0257866e
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: turn_on
+  condition: []
+  action:
+  - service: script.odswiez_60min
+    data: {}
+  mode: single
+- id: '1662313855936'
+  alias: Pilot Hue Wyłącz
+  description: ''
+  trigger:
+  - device_id: 49af518e1df530edddd3317f0257866e
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: turn_off
+  condition: []
+  action:
+  - type: turn_off
+    device_id: 116a87afa99d07bf350214bd934fd124
+    entity_id: light.tz3000_excgg5kb_ts0004_d23f25cf_on_off
+    domain: light
+  mode: single
+- id: '1662314112321'
+  alias: Pilot Hue 30min
+  description: ''
+  trigger:
+  - device_id: 49af518e1df530edddd3317f0257866e
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: dim_up
+  condition: []
+  action:
+  - service: script.odswiez_30min
+    data: {}
+  mode: single
+- id: '1662314249815'
+  alias: Pilot Hue 15min
+  description: ''
+  trigger:
+  - device_id: 49af518e1df530edddd3317f0257866e
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: dim_down
+  condition: []
+  action:
+  - service: script.odswiez_15min
+    data: {}
+  mode: single

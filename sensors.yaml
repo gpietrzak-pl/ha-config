@@ -1,0 +1,17 @@
+#sensors.yaml
+
+#MODBUS
+- platform: modbus
+  scan_interval: 100
+  registers:
+    - name: air_extract_air_temp
+      hub: hub1
+      slave: 1
+      register: 12543
+      register_type: holding
+      unit_of_measurement: °C
+      count: 1
+      scale: 0.1
+    #   data_type: float
+      precision: 1
+      

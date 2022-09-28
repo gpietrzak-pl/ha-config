@@ -1,0 +1,97 @@
+odswiez_15min:
+  sequence:
+  - type: turn_on
+    device_id: 116a87afa99d07bf350214bd934fd124
+    entity_id: light.tz3000_excgg5kb_ts0004_d23f25cf_on_off
+    domain: light
+  - delay:
+      hours: 0
+      minutes: 15
+      seconds: 0
+      milliseconds: 0
+  - type: turn_off
+    device_id: 116a87afa99d07bf350214bd934fd124
+    entity_id: light.tz3000_excgg5kb_ts0004_d23f25cf_on_off
+    domain: light
+  mode: single
+  alias: Odśwież 15min
+  icon: mdi:fan-speed-1
+odswiez_30min:
+  alias: Odśwież 30min
+  sequence:
+  - type: turn_on
+    device_id: 116a87afa99d07bf350214bd934fd124
+    entity_id: light.tz3000_excgg5kb_ts0004_d23f25cf_on_off
+    domain: light
+  - delay:
+      hours: 0
+      minutes: 30
+      seconds: 0
+      milliseconds: 0
+  - type: turn_off
+    device_id: 116a87afa99d07bf350214bd934fd124
+    entity_id: light.tz3000_excgg5kb_ts0004_d23f25cf_on_off
+    domain: light
+  mode: single
+  icon: mdi:fan-speed-2
+odswiez_60min:
+  alias: Odśwież 60min
+  sequence:
+  - type: turn_on
+    device_id: 116a87afa99d07bf350214bd934fd124
+    entity_id: light.tz3000_excgg5kb_ts0004_d23f25cf_on_off
+    domain: light
+  - delay:
+      hours: 1
+      minutes: 0
+      seconds: 0
+      milliseconds: 0
+  - type: turn_off
+    device_id: 116a87afa99d07bf350214bd934fd124
+    entity_id: light.tz3000_excgg5kb_ts0004_d23f25cf_on_off
+    domain: light
+  mode: single
+  icon: mdi:fan-speed-3
+wietrzenie_30min:
+  alias: Wietrzenie 30min
+  sequence:
+  - type: turn_on
+    device_id: 116a87afa99d07bf350214bd934fd124
+    entity_id: light.tz3000_excgg5kb_ts0004_d23f25cf_on_off_4
+    domain: light
+    flash: short
+  - delay:
+      hours: 0
+      minutes: 30
+      seconds: 0
+      milliseconds: 0
+  - type: turn_off
+    device_id: 116a87afa99d07bf350214bd934fd124
+    entity_id: light.tz3000_excgg5kb_ts0004_d23f25cf_on_off_4
+    domain: light
+  mode: single
+  icon: mdi:air-conditioner
+vtr300_modbus_baudrate:
+  alias: Modbus zmien baudrate
+  mode: single
+  icon: mdi:fan-speed-2
+  sequence:
+  - service: modbus.write_register
+    data_template:
+      hub: VTR300
+      unit: 1
+      address: 17002
+      value: 10
+zgas_swiatlo:
+  alias: Zgaś swiatlo
+  sequence:
+  - type: turn_off
+    device_id: b7c4aa80105606341fabb9ce7ec0bbf1
+    entity_id: light.hue_white_lamp_1
+    domain: light
+  - type: turn_off
+    device_id: 18e2975f79931d2188ba270b3be2b1c8
+    entity_id: light.hue_white_lamp_2
+    domain: light
+  mode: single
+  icon: mdi:lightbulb-multiple-off
