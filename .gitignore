@@ -12,6 +12,7 @@ __pycache__
 .cloud
 .storage
 deps
+node-red
 
 # Specific file ignores
 core
