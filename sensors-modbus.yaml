@@ -1,4 +1,4 @@
-#sensors.yaml
+#sensors-modbus.yaml
 
   - name: Indoor Air Temperature
     unique_id: indoortemp1

@@ -8,13 +8,6 @@ automation: !include automations.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
 
-http:
-  use_x_forwarded_for: true
-  trusted_proxies:
-  - 127.0.0.1
-  ip_ban_enabled: false
-  login_attempts_threshold: 500
-
 # MODBUS
 
 modbus:
@@ -31,4 +24,4 @@ modbus:
   parity: N
   port: /dev/serial/by-id/usb-1a86_USB_Single_Serial_5434023441-if00
   stopbits: 1
-  sensors: !include sensors.yaml
+  sensors: !include sensors-modbus.yaml
