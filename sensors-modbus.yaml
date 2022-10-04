@@ -1,14 +1,14 @@
 #sensors-modbus.yaml
 
-  - name: Indoor Air Temperature
-    unique_id: indoortemp1
+  - name: Temperatura powietrza nawiewanego
+    unique_id: supply_air_temp
     unit_of_measurement: °C
     slave: 1
     scale: 0.1
     precision: 1
     address: 12102
-  - name: Indoor Air Humidity
-    unique_id: indoorhumi1
+  - name: Wilgotność powietrza usuwanego
+    unique_id: return_air_humidity
     unit_of_measurement: '%'
     slave: 1
     address: 12136
@@ -1027,8 +1027,8 @@
     unique_id: REG_FILTER_REPLACEMENT_TIME_H
     slave: 1
     address: 7003
-  - name: 12101_REG_SENSOR_FPT
-    unique_id: REG_SENSOR_FPT
+  - name: Temperatura powietrza pobieranego
+    unique_id: outdoor_air_temp
     slave: 1
     address: 12101
     unit_of_measurement: °C
@@ -1041,8 +1041,8 @@
     unit_of_measurement: °C
     scale: 0.1
     precision: 1
-  - name: 12544_REG_SENSOR_PDM_EAT_VALUE
-    unique_id: REG_SENSOR_PDM_EAT_VALUE
+  - name: Temperatura powietrza wywiewanego
+    unique_id: return_air_temp
     slave: 1
     address: 12544
     unit_of_measurement: °C
