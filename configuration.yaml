@@ -25,3 +25,9 @@ modbus:
   port: /dev/serial/by-id/usb-1a86_USB_Single_Serial_5434023441-if00
   stopbits: 1
   sensors: !include sensors-modbus.yaml
+
+  # camera
+  camera: 
+    - platform: generic
+    - stream_source: rtsp://admin:XXXXXXXXXXXXXX@192.168.2.60:554/
+    - authentication: basic
