@@ -1,0 +1,2965 @@
+  - name: 1000_REG_DEMC_RH_HIGHEST
+    unique_id: 1000_REG_DEMC_RH_HIGHEST
+    slave: 1
+    address: 1000
+    #Highestvalueofall RHsensors
+  - name: 1001_REG_DEMC_CO2_HIGHEST
+    unique_id: 1001_REG_DEMC_CO2_HIGHEST
+    slave: 1
+    address: 1001
+    #Highestvalueofall CO2 sensors
+  - name: 1010_REG_DEMC_RH_PI_SP
+    unique_id: 1010_REG_DEMC_RH_PI_SP
+    slave: 1
+    address: 1010
+    #Setpoint forRH demand control
+  - name: 1011_REG_DEMC_RH_PI_FEEDBACK
+    unique_id: 1011_REG_DEMC_RH_PI_FEEDBACK
+    slave: 1
+    address: 1011
+    #SensorvalueforRH demand control
+  - name: 1018_REG_DEMC_RH_PI_OUTPUT
+    unique_id: 1018_REG_DEMC_RH_PI_OUTPUT
+    slave: 1
+    address: 1018
+    #OutputvalueforRH demand control.(1):
+    #Dependson regulation type. Value canbe
+    #%,RPM, Pressureor Flow
+  - name: 1020_REG_DEMC_CO2_PI_SP
+    unique_id: 1020_REG_DEMC_CO2_PI_SP
+    slave: 1
+    address: 1020
+    #Setpoint forCO2 demand control
+  - name: 1021_REG_DEMC_CO2_PI_FEEDBACK
+    unique_id: 1021_REG_DEMC_CO2_PI_FEEDBACK
+    slave: 1
+    address: 1021
+    #SensorvalueforCO2 demand control
+  - name: 1028_REG_DEMC_CO2_PI_OUTPUT
+    unique_id: 1028_REG_DEMC_CO2_PI_OUTPUT
+    slave: 1
+    address: 1028
+    #OutputvalueforCO2 demand control
+    #(1):Depends onregulationtype. Value can
+    #be %,RPM, Pressureor Flow
+  - name: 1030_REG_DEMC_RH_SETTINGS_PBAND
+    unique_id: 1030_REG_DEMC_RH_SETTINGS_PBAND
+    slave: 1
+    address: 1030
+    #Pband settingforRHdemand control
+  - name: 1032_REG_DEMC_RH_SETTINGS_SP_SUMMER
+    unique_id: 1032_REG_DEMC_RH_SETTINGS_SP_SUMMER
+    slave: 1
+    address: 1032
+    #Setpoint settingforRHdemand control
+    #during (temperaturebased) wintertime
+  - name: 1033_REG_DEMC_RH_SETTINGS_SP_WINTER
+    unique_id: 1033_REG_DEMC_RH_SETTINGS_SP_WINTER
+    slave: 1
+    address: 1033
+    #Setpoint settingforRHdemand control
+    #during (temperaturebased) summer time
+  - name: 1034_REG_DEMC_RH_SETTINGS_ON_OFF
+    unique_id: 1034_REG_DEMC_RH_SETTINGS_ON_OFF
+    slave: 1
+    address: 1034
+    #Flag indicatingif RHdemand control is
+    #allowed
+  - name: 1038_REG_SUMMER_WINTER
+    unique_id: 1038_REG_SUMMER_WINTER
+    slave: 1
+    address: 1038
+    #Actualseasson forDemand Control
+    #0: Summer
+    #1: Winter
+  - name: 1040_REG_DEMC_CO2_SETTINGS_PBAND
+    unique_id: 1040_REG_DEMC_CO2_SETTINGS_PBAND
+    slave: 1
+    address: 1040
+    #Pband settingforCO2 demand control
+  - name: 1042_REG_DEMC_CO2_SETTINGS_SP
+    unique_id: 1042_REG_DEMC_CO2_SETTINGS_SP
+    slave: 1
+    address: 1042
+    #Setpoint settingforCO2 demand control
+  - name: 1043_REG_DEMC_CO2_SETTINGS_ON_OFF
+    unique_id: 1043_REG_DEMC_CO2_SETTINGS_ON_OFF
+    slave: 1
+    address: 1043
+    #Flag indicatingif CO2 demand controlis
+    #allowed
+  - name: 1120_REG_IAQ_SPEED_LEVEL_MIN
+    unique_id: 1120_REG_IAQ_SPEED_LEVEL_MIN
+    slave: 1
+    address: 1120
+    #Minimum levelforDemand Control
+    #2: Low
+    #3: Normal
+  - name: 1121_REG_IAQ_SPEED_LEVEL_MAX
+    unique_id: 1121_REG_IAQ_SPEED_LEVEL_MAX
+    slave: 1
+    address: 1121
+    #Maximum levelforuser Demand Control
+    #3: Normal
+    #4: High
+    #5: Maximum
+  - name: 1122_REG_IAQ_LEVEL
+    unique_id: 1122_REG_IAQ_LEVEL
+    slave: 1
+    address: 1122
+    #ActualIAQ level:
+    #0: Economic
+    #1: Good
+    #2: Improving
+  - name: 1100_REG_USERMODE_HOLIDAY_TIME
+    unique_id: 1100_REG_USERMODE_HOLIDAY_TIME
+    slave: 1
+    address: 1100
+    #Timedelaysetting foruser mode Holiday
+  - name: 1101_REG_USERMODE_AWAY_TIME
+    unique_id: 1101_REG_USERMODE_AWAY_TIME
+    slave: 1
+    address: 1101
+    #Timedelaysetting foruser mode Away
+  - name: 1102_REG_USERMODE_FIREPLACE_TIME
+    unique_id: 1102_REG_USERMODE_FIREPLACE_TIME
+    slave: 1
+    address: 1102
+    #Timedelaysetting foruser mode FirePlace
+  - name: 1103_REG_USERMODE_REFRESH_TIME
+    unique_id: 1103_REG_USERMODE_REFRESH_TIME
+    slave: 1
+    address: 1103
+    #Timedelaysetting foruser mode Refresh
+  - name: 1104_REG_USERMODE_CROWDED_TIME
+    unique_id: 1104_REG_USERMODE_CROWDED_TIME
+    slave: 1
+    address: 1104
+    #Timedelaysetting foruser mode Crowded
+  - name: 1110_REG_USERMODE_REMAINING_TIME_L
+    unique_id: 1110_REG_USERMODE_REMAINING_TIME_L
+    slave: 1
+    address: 1110
+    #Remainingtime forthestate Holiday/
+    #Away/Fire Place/Refresh/Crowded
+  - name: 1111_REG_USERMODE_REMAINING_TIME_H
+    unique_id: 1111_REG_USERMODE_REMAINING_TIME_H
+    slave: 1
+    address: 1111
+    #Remainingtime forthestate Holiday/
+    #Away/Fire Place/Refresh/Crowded
+  - name: 1134_REG_USERMODE_CROWDED_AIRFLOW_LEVEL_SAF
+    unique_id: 1134_REG_USERMODE_CROWDED_AIRFLOW_LEVEL_SAF
+    slave: 1
+    address: 1134
+    #Fanspeed levelformode Crowded
+    #3: Normal
+    #4: High
+    #5: Maximum
+  - name: 1135_REG_USERMODE_CROWDED_AIRFLOW_LEVEL_EAF
+    unique_id: 1135_REG_USERMODE_CROWDED_AIRFLOW_LEVEL_EAF
+    slave: 1
+    address: 1135
+    #Fanspeed levelformode Crowded
+    #3: Normal
+    #4: High
+    #5: Maximum
+  - name: 1136_REG_USERMODE_REFRESH_AIRFLOW_LEVEL_SAF
+    unique_id: 1136_REG_USERMODE_REFRESH_AIRFLOW_LEVEL_SAF
+    slave: 1
+    address: 1136
+    #Fanspeed levelformode Refresh
+    #3: Normal
+    #4: High
+    #5: Maximum
+  - name: 1137_REG_USERMODE_REFRESH_AIRFLOW_LEVEL_EAF
+    unique_id: 1137_REG_USERMODE_REFRESH_AIRFLOW_LEVEL_EAF
+    slave: 1
+    address: 1137
+    #Fanspeed levelformode Refresh
+    #3: Normal
+    #4: High
+    #5: Maximum
+  - name: 1138_REG_USERMODE_FIREPLACE_AIRFLOW_LEVEL_SAF
+    unique_id: 1138_REG_USERMODE_FIREPLACE_AIRFLOW_LEVEL_SAF
+    slave: 1
+    address: 1138
+    #Fanspeed levelformode FirePlace
+    #3: Normal
+    #4: High
+    #5: Maximum
+  - name: 1139_REG_USERMODE_FIREPLACE_AIRFLOW_LEVEL_EAF
+    unique_id: 1139_REG_USERMODE_FIREPLACE_AIRFLOW_LEVEL_EAF
+    slave: 1
+    address: 1139
+    #Fanspeed levelformode FirePlace
+    #1: Minimum
+    #2: Low
+    #3: Normal
+  - name: 1140_REG_USERMODE_AWAY_AIRFLOW_LEVEL_SAF
+    unique_id: 1140_REG_USERMODE_AWAY_AIRFLOW_LEVEL_SAF
+    slave: 1
+    address: 1140
+    #Fanspeed levelformode Away.
+    #0: Off(1)
+    #1: Minimum
+    #2: Low
+    #3: Normal.
+    #(1):valueOffonlyallowedif contentsof
+    #register REG_FAN_MANUAL_STOP_
+    #ALLOWED is 1.
+  - name: 1141_REG_USERMODE_AWAY_AIRFLOW_LEVEL_EAF
+    unique_id: 1141_REG_USERMODE_AWAY_AIRFLOW_LEVEL_EAF
+    slave: 1
+    address: 1141
+    #Fanspeed levelformode Away.
+    #0: Off(1)
+    #1: Minimum
+    #2: Low
+    #3: Normal.
+    #(1):valueOffonlyallowedif contentsof
+    #register REG_FAN_MANUAL_STOP_
+    #ALLOWED is 1.
+  - name: 1142_REG_USERMODE_HOLIDAY_AIRFLOW_LEVEL_SAF
+    unique_id: 1142_REG_USERMODE_HOLIDAY_AIRFLOW_LEVEL_SAF
+    slave: 1
+    address: 1142
+    #Fanspeed levelformode Holiday.
+    #0: Off(1)
+    #1: Minimum
+    #2: Low
+    #3: Normal.
+    #(1):valueOffonlyallowedif contentsof
+    #register REG_FAN_MANUAL_STOP_
+    #ALLOWED is 1.
+  - name: 1143_REG_USERMODE_HOLIDAY_AIRFLOW_LEVEL_EAF
+    unique_id: 1143_REG_USERMODE_HOLIDAY_AIRFLOW_LEVEL_EAF
+    slave: 1
+    address: 1143
+    #Fanspeed levelformode Holiday.
+    #0: Off(1)
+    #1: Minimum
+    #2: Low
+    #3: Normal.
+    #(1):valueOffonlyallowedif contentsof
+    #register REG_FAN_MANUAL_STOP_
+    #ALLOWED is 1.
+  - name: 1144_REG_USERMODE_COOKERHOOD_AIRFLOW_LEVEL_SAF
+    unique_id: 1144_REG_USERMODE_COOKERHOOD_AIRFLOW_LEVEL_SAF
+    slave: 1
+    address: 1144
+    #Fanspeed levelformode CookerHood
+    #: Low
+    #: Normal
+    #: High
+  - name: 1145_REG_USERMODE_COOKERHOOD_AIRFLOW_LEVEL_EAF
+    unique_id: 1145_REG_USERMODE_COOKERHOOD_AIRFLOW_LEVEL_EAF
+    slave: 1
+    address: 1145
+    #Fanspeed levelformode CookerHood
+    #1: Minimum
+    #2: Low
+    #3: Normal
+  - name: 1146_REG_USERMODE_VACUUMCLEANER_AIRFLOW_LEVEL_SAF
+    unique_id: 1146_REG_USERMODE_VACUUMCLEANER_AIRFLOW_LEVEL_SAF
+    slave: 1
+    address: 1146
+    #Fanspeed levelformode Vacuum Cleaner
+    #2: Low
+    #3: Normal
+    #4: High
+  - name: 1147_REG_USERMODE_VACUUMCLEANER_AIRFLOW_LEVEL_EAF
+    unique_id: 1147_REG_USERMODE_VACUUMCLEANER_AIRFLOW_LEVEL_EAF
+    slave: 1
+    address: 1147
+    #Fanspeed levelformode Vacuum Cleaner
+    #1: Minimum
+    #2: Low
+    #3: Normal
+  - name: 1150_REG_USERMODE_CROWDED_T_OFFSET
+    unique_id: 1150_REG_USERMODE_CROWDED_T_OFFSET
+    slave: 1
+    address: 1150
+    #Temperaturesetpoint offset foruser mode
+    #Crowded
+  - name: 1160_REG_USERMODE_MODE
+    unique_id: 1160_REG_USERMODE_MODE
+    slave: 1
+    address: 1160
+    #ActiveUser mode.
+    #0: Auto
+    #1: Manual
+    #2: Crowded
+    #3: Refresh
+    #4: Fireplace
+    #5: Away
+    #6: Holiday
+    #7: Cooker Hood
+    #8: VacuumCleaner
+    #9: CDI1
+    #10:CDI2
+    #11:CDI3
+    #12:PressureGuard
+  - name: 1161_REG_USERMODE_HMI_CHANGE_REQUEST
+    unique_id: 1161_REG_USERMODE_HMI_CHANGE_REQUEST
+    slave: 1
+    address: 1161
+    #Newdesireduser mode as requested by
+    #HMI
+    #0: None
+    #1: AUTO
+    #2: Manual
+    #3: Crowded
+    #4: Refresh
+    #5: Fireplace
+    #6: Away
+    #7: Holiday
+  - name: 1170_REG_CDI_1_AIRFLOW_LEVEL_SAF
+    unique_id: 1170_REG_CDI_1_AIRFLOW_LEVEL_SAF
+    slave: 1
+    address: 1170
+    #Fanspeed levelforconfigurabledigitalinput
+    #1.
+    #0: Off
+    #1: Minimum
+    #2: Low
+    #3: Normal
+    #4: High
+    #5: Maximum
+  - name: 1171_REG_CDI_1_AIRFLOW_LEVEL_EAF
+    unique_id: 1171_REG_CDI_1_AIRFLOW_LEVEL_EAF
+    slave: 1
+    address: 1171
+    #Fanspeed levelforconfigurabledigitalinput
+    #1.
+    #0: Off
+    #1: Minimum
+    #2: Low
+    #3: Normal
+    #4: High
+    #5: Maximum
+  - name: 1172_REG_CDI_2_AIRFLOW_LEVEL_SAF
+    unique_id: 1172_REG_CDI_2_AIRFLOW_LEVEL_SAF
+    slave: 1
+    address: 1172
+    #Fanspeed levelforconfigurabledigitalinput
+    #2.
+    #0: Off
+    #1: Minimum
+    #2: Low
+    #3: Normal
+    #4: High
+    #5: Maximum
+  - name: 1173_REG_CDI_2_AIRFLOW_LEVEL_EAF
+    unique_id: 1173_REG_CDI_2_AIRFLOW_LEVEL_EAF
+    slave: 1
+    address: 1173
+    #Fanspeed levelforconfigurabledigitalinput
+    #2.
+    #0: Off
+    #1: Minimum
+    #2: Low
+    #3: Normal
+    #4: High
+    #5: Maximum
+  - name: 1174_REG_CDI_3_AIRFLOW_LEVEL_SAF
+    unique_id: 1174_REG_CDI_3_AIRFLOW_LEVEL_SAF
+    slave: 1
+    address: 1174
+    #Fanspeed levelforconfigurabledigitalinput
+    #3.
+    #0: Off
+    #1: Minimum
+    #2: Low
+    #3: Normal
+    #4: High
+    #5: Maximum
+  - name: 1175_REG_CDI_3_AIRFLOW_LEVEL_EAF
+    unique_id: 1175_REG_CDI_3_AIRFLOW_LEVEL_EAF
+    slave: 1
+    address: 1175
+    #Fanspeed levelforconfigurabledigitalinput
+    #3.
+    #0: Off
+    #1: Minimum
+    #2: Low
+    #3: Normal
+    #4: High
+    #5: Maximum
+  - name: 1176_REG_PRESSURE_GUARD_AIRFLOW_LEVEL_SAF
+    unique_id: 1176_REG_PRESSURE_GUARD_AIRFLOW_LEVEL_SAF
+    slave: 1
+    address: 1176
+    #Fanspeed levelforconfigurablepressure
+    #guard function.
+    #0: Off
+    #1: Minimum
+    #2: Low
+    #3: Normal
+    #4: High
+    #5: Maximum
+  - name: 1177_REG_PRESSURE_GUARD_AIRFLOW_LEVEL_EAF
+    unique_id: 1177_REG_PRESSURE_GUARD_AIRFLOW_LEVEL_EAF
+    slave: 1
+    address: 1177
+    #Fanspeed levelforconfigurablepressure
+    #guard function.
+    #0: Off
+    #1: Minimum
+    #2: Low
+    #3: Normal
+    #4: High
+    #5: Maximum
+  - name: 12300_REG_SENSOR_DI_AWAY
+    unique_id: 12300_REG_SENSOR_DI_AWAY
+    slave: 1
+    address: 12300
+    #Value ofphysicalDigital Input ofAway
+    #function
+  - name: 12301_REG_SENSOR_DI_HOLIDAY
+    unique_id: 12301_REG_SENSOR_DI_HOLIDAY
+    slave: 1
+    address: 12301
+    #Value ofphysicalDigital Input ofHoliday
+    #function
+  - name: 12302_REG_SENSOR_DI_FIREPLACE
+    unique_id: 12302_REG_SENSOR_DI_FIREPLACE
+    slave: 1
+    address: 12302
+    #Value ofphysicalDigital Input ofFireplace
+    #function
+  - name: 12303_REG_SENSOR_DI_REHRESH
+    unique_id: 12303_REG_SENSOR_DI_REHRESH
+    slave: 1
+    address: 12303
+    #Value ofphysicalDigital Input ofRefresh
+    #function
+  - name: 12304_REG_SENSOR_DI_CROWDED
+    unique_id: 12304_REG_SENSOR_DI_CROWDED
+    slave: 1
+    address: 12304
+    #Value ofphysicalDigital Input ofCrowded
+    #function
+  - name: 12305_REG_SENSOR_DI_COOKERHOOD
+    unique_id: 12305_REG_SENSOR_DI_COOKERHOOD
+    slave: 1
+    address: 12305
+    #Value ofphysicalDigital Input of
+    #Cookerhood function
+  - name: 12306_REG_SENSOR_DI_VACUUMCLEANER
+    unique_id: 12306_REG_SENSOR_DI_VACUUMCLEANER
+    slave: 1
+    address: 12306
+    #Value ofphysicalDigital Input ofVacuum
+    #Cleanerfunction
+  - name: 1180_REG_USERMODE_HOLIDAY_DI_OFF_DELAY
+    unique_id: 1180_REG_USERMODE_HOLIDAY_DI_OFF_DELAY
+    slave: 1
+    address: 1180
+    #OffdelayforDI
+  - name: 1181_REG_USERMODE_AWAY_DI_OFF_DELAY
+    unique_id: 1181_REG_USERMODE_AWAY_DI_OFF_DELAY
+    slave: 1
+    address: 1181
+    #OffdelayforDI
+  - name: 1182_REG_USERMODE_FIRPLACE_DI_OFF_DELAY
+    unique_id: 1182_REG_USERMODE_FIRPLACE_DI_OFF_DELAY
+    slave: 1
+    address: 1182
+    #OffdelayforDI
+  - name: 1183_REG_USERMODE_REFRESH_DI_OFF_DELAY
+    unique_id: 1183_REG_USERMODE_REFRESH_DI_OFF_DELAY
+    slave: 1
+    address: 1183
+    #OffdelayforDI
+  - name: 1184_REG_USERMODE_CROWDED_DI_OFF_DELAY
+    unique_id: 1184_REG_USERMODE_CROWDED_DI_OFF_DELAY
+    slave: 1
+    address: 1184
+    #OffdelayforDI
+  - name: 1187_REG_CDI1_OFF_DELAY
+    unique_id: 1187_REG_CDI1_OFF_DELAY
+    slave: 1
+    address: 1187
+    #OffdelayforDI
+  - name: 1188_REG_CDI2_OFF_DELAY
+    unique_id: 1188_REG_CDI2_OFF_DELAY
+    slave: 1
+    address: 1188
+    #OffdelayforDI
+  - name: 1189_REG_CDI3_OFF_DELAY
+    unique_id: 1189_REG_CDI3_OFF_DELAY
+    slave: 1
+    address: 1189
+    #OffdelayforDI
+  - name: 1220_REG_SPEED_CDI1_SAF
+    unique_id: 1220_REG_SPEED_CDI1_SAF
+    slave: 1
+    address: 1220
+    #SAFspeed valueforuser mode Holiday.(1):
+    #Dependson regulation type. Value canbe
+    #%,RPM,Pressureor Flow
+  - name: 1221_REG_SPEED_CDI1_EAF
+    unique_id: 1221_REG_SPEED_CDI1_EAF
+    slave: 1
+    address: 1221
+    #EAFspeed valueforuser modeHoliday.(1):
+    #Dependson regulation type. Value canbe
+    #%,RPM,Pressureor Flow
+  - name: 1222_REG_SPEED_CDI2_SAF
+    unique_id: 1222_REG_SPEED_CDI2_SAF
+    slave: 1
+    address: 1222
+    #SAFspeed valueformode CookerHood.(1):
+    #ependson regulation type. Value canbe
+    #%,RPM,Pressureor Flow
+  - name: 1223_REG_SPEED_CDI2_EAF
+    unique_id: 1223_REG_SPEED_CDI2_EAF
+    slave: 1
+    address: 1223
+    #EAFspeed valueformode CookerHood.(1):
+    #Dependson regulation type. Value canbe
+    #%,RPM,Pressureor Flow
+  - name: 1224_REG_SPEED_CDI3_SAF
+    unique_id: 1224_REG_SPEED_CDI3_SAF
+    slave: 1
+    address: 1224
+    #SAFspeed valueformode Vacuum Cleaner.
+    #(1):Dependson regulationtype. Value can
+    #be %,RPM, Pressureor Flow
+  - name: 1225_REG_SPEED_CDI3_EAF
+    unique_id: 1225_REG_SPEED_CDI3_EAF
+    slave: 1
+    address: 1225
+    #EAFspeed valueformode Vacuum Cleaner.
+    #(1):Dependson regulationtype. Value can
+    #be %,RPM, Pressureor Flow
+  - name: 1226_REG_SPEED_PRESSURE_GUARD_SAF
+    unique_id: 1226_REG_SPEED_PRESSURE_GUARD_SAF
+    slave: 1
+    address: 1226
+    #SAFspeed valueforlowfan speed.(1):
+    #Dependson regulation type. Value canbe
+    #%,RPM,Pressureor Flow
+  - name: 1227_REG_SPEED_PRESSURE_GUARD_EAF
+    unique_id: 1227_REG_SPEED_PRESSURE_GUARD_EAF
+    slave: 1
+    address: 1227
+    #EAFspeed valueforlowfan speed.(1):
+    #Dependson regulation type. Value canbe
+    #%,RPM,Pressureor Flow
+  - name: 1620_REG_USERMODE_REMAINING_TIME_CDI1_L
+    unique_id: 1620_REG_USERMODE_REMAINING_TIME_CDI1_L
+    slave: 1
+    address: 1620
+    #Remainingtime
+  - name: 1621_REG_USERMODE_REMAINING_TIME_CDI1_H
+    unique_id: 1621_REG_USERMODE_REMAINING_TIME_CDI1_H
+    slave: 1
+    address: 1621
+    #
+  - name: 1622_REG_USERMODE_REMAINING_TIME_CDI2_L
+    unique_id: 1622_REG_USERMODE_REMAINING_TIME_CDI2_L
+    slave: 1
+    address: 1622
+    #Remainingtime
+  - name: 1623_REG_USERMODE_REMAINING_TIME_CDI2_H
+    unique_id: 1623_REG_USERMODE_REMAINING_TIME_CDI2_H
+    slave: 1
+    address: 1623
+    #
+  - name: 1624_REG_USERMODE_REMAINING_TIME_CDI3_L
+    unique_id: 1624_REG_USERMODE_REMAINING_TIME_CDI3_L
+    slave: 1
+    address: 1624
+    #Remainingtime
+  - name: 1625_REG_USERMODE_REMAINING_TIME_CDI3_H
+    unique_id: 1625_REG_USERMODE_REMAINING_TIME_CDI3_H
+    slave: 1
+    address: 1625
+    #
+  - name: 3113_REG_FUNCTION_ACTIVE_PRESSURE_GUARD
+    unique_id: 3113_REG_FUNCTION_ACTIVE_PRESSURE_GUARD
+    slave: 1
+    address: 3113
+    #Indicatesif function is active
+  - name: 3114_REG_FUNCTION_ACTIVE_CDI_1
+    unique_id: 3114_REG_FUNCTION_ACTIVE_CDI_1
+    slave: 1
+    address: 3114
+    #Indicatesif function is active
+  - name: 3115_REG_FUNCTION_ACTIVE_CDI_2
+    unique_id: 3115_REG_FUNCTION_ACTIVE_CDI_2
+    slave: 1
+    address: 3115
+    #Indicatesif function is active
+  - name: 3116_REG_FUNCTION_ACTIVE_CDI_3
+    unique_id: 3116_REG_FUNCTION_ACTIVE_CDI_3
+    slave: 1
+    address: 3116
+    #Indicatesif function is active
+  - name: 12315_REG_SENSOR_DI_PRESSURE_GUARD
+    unique_id: 12315_REG_SENSOR_DI_PRESSURE_GUARD
+    slave: 1
+    address: 12315
+    #Indicatesif physicalDI isactive
+  - name: 12316_REG_SENSOR_DI_CDI_1
+    unique_id: 12316_REG_SENSOR_DI_CDI_1
+    slave: 1
+    address: 12316
+    #Indicatesif physicalDI isactive
+  - name: 12317_REG_SENSOR_DI_CDI_2
+    unique_id: 12317_REG_SENSOR_DI_CDI_2
+    slave: 1
+    address: 12317
+    #Indicatesif physicalDI isactive
+  - name: 12318_REG_SENSOR_DI_CDI_3
+    unique_id: 12318_REG_SENSOR_DI_CDI_3
+    slave: 1
+    address: 12318
+    #Indicatesif physicalDI isactive
+  - name: 12400_REG_SENSOR_RPM_SAF
+    unique_id: 12400_REG_SENSOR_RPM_SAF
+    slave: 1
+    address: 12400
+    #Supply AirFan RPMindication fromTACHO
+  - name: 12401_REG_SENSOR_RPM_EAF
+    unique_id: 12401_REG_SENSOR_RPM_EAF
+    slave: 1
+    address: 12401
+    #Extract AirFan RPMindication fromTACHO
+  - name: 12402_REG_SENSOR_FLOW_PIGGYBACK_SAF
+    unique_id: 12402_REG_SENSOR_FLOW_PIGGYBACK_SAF
+    slave: 1
+    address: 12402
+    #Flowvaluecalculated from piggyback
+    #pressuresensor.
+  - name: 12403_REG_SENSOR_FLOW_PIGGYBACK_EAF
+    unique_id: 12403_REG_SENSOR_FLOW_PIGGYBACK_EAF
+    slave: 1
+    address: 12403
+    #Flowvaluecalculated from piggyback
+    #pressuresensor.
+  - name: 12404_REG_SENSOR_DI_BYF
+    unique_id: 12404_REG_SENSOR_DI_BYF
+    slave: 1
+    address: 12404
+    #Value from Bypass Damper Feedback input.
+    #In%.
+  - name: 9000_REG_SYSTEM_UNIT_FLOW
+    unique_id: 9000_REG_SYSTEM_UNIT_FLOW
+    slave: 1
+    address: 9000
+    #UnitforCAVcontrol mode.0: l/s1:m3/h2:
+    #cfm
+  - name: 9001_REG_SYSTEM_UNIT_PRESSURE
+    unique_id: 9001_REG_SYSTEM_UNIT_PRESSURE
+    slave: 1
+    address: 9001
+    #UnitsforVAV control mode.0: Pa1: InH2O
+  - name: 13600_REG_MANUAL_OVERRIDE_OUTPUT_SAF
+    unique_id: 13600_REG_MANUAL_OVERRIDE_OUTPUT_SAF
+    slave: 1
+    address: 13600
+    #SAFOverride.0:Auto1: Manual
+  - name: 13601_REG_MANUAL_OVERRIDE_OUTPUT_EAF
+    unique_id: 13601_REG_MANUAL_OVERRIDE_OUTPUT_EAF
+    slave: 1
+    address: 13601
+    #EAFOverride.0:Auto1: Manual
+  - name: 13800_REG_MANUAL_OVERRIDE_OUTPUT_SAF_VALUE
+    unique_id: 13800_REG_MANUAL_OVERRIDE_OUTPUT_SAF_VALUE
+    slave: 1
+    address: 13800
+    #SAFOverridevaluein% ifmanual (1)
+    #selected
+  - name: 13801_REG_MANUAL_OVERRIDE_OUTPUT_EAF_VALUE
+    unique_id: 13801_REG_MANUAL_OVERRIDE_OUTPUT_EAF_VALUE
+    slave: 1
+    address: 13801
+    #EAFoverridevaluein % ifmanual(1)
+    #selected
+  - name: 1130_REG_USERMODE_MANUAL_AIRFLOW_LEVEL_SAF
+    unique_id: 1130_REG_USERMODE_MANUAL_AIRFLOW_LEVEL_SAF
+    slave: 1
+    address: 1130
+    #Fanspeed levelformode Manual. Applies
+    #to both theSAF and theEAF fan.
+    #0: Off(1)
+    #2: Low
+    #3: Normal
+    #4: High
+    #(1):valueOffonlyallowedif contentsof
+    #register REG_FAN_MANUAL_STOP_
+    #ALLOWED is 1.
+  - name: 1352_REG_FAN_MANUAL_STOP_ALLOWED
+    unique_id: 1352_REG_FAN_MANUAL_STOP_ALLOWED
+    slave: 1
+    address: 1352
+    #Allowmanual fan stop(also as selection for
+    #user modes andWeek schedule).
+    #0: Manual stop notallowed
+    #1: Manual stop allowed
+  - name: 1273_REG_FAN_REGULATION_UNIT
+    unique_id: 1273_REG_FAN_REGULATION_UNIT
+    slave: 1
+    address: 1273
+    #Type offan control mode.
+    #0: Manual
+    #1: RPM
+    #2: VAV (Constant Pressure)
+    #3: CAV(Constant Flow)4:DCV(External)
+  - name: 1350_REG_SPEED_FANS_RUNNING
+    unique_id: 1350_REG_SPEED_FANS_RUNNING
+    slave: 1
+    address: 1350
+    #Indicatesthat both fans arerunning
+  - name: 1351_REG_SPEED_SAF_DESIRED_OFF
+    unique_id: 1351_REG_SPEED_SAF_DESIRED_OFF
+    slave: 1
+    address: 1351
+    #Indicatesthat theSAF shall be turned off
+    #oncetheelectrical reheateris cooleddown.
+  - name: 1300_REG_FAN_LEVEL_SAF_MIN
+    unique_id: 1300_REG_FAN_LEVEL_SAF_MIN
+    slave: 1
+    address: 1300
+    #SAFspeed valueforminimum fan speed.
+    #(1):Dependson regulationtype. Value can
+    #be %,RPM, Pressureor Flow
+  - name: 1301_REG_FAN_LEVEL_EAF_MIN
+    unique_id: 1301_REG_FAN_LEVEL_EAF_MIN
+    slave: 1
+    address: 1301
+    #EAFspeed valueforminimum fan speed.
+    #(1):Dependson regulationtype. Value can
+    #be %,RPM, Pressureor Flow
+  - name: 1302_REG_FAN_LEVEL_SAF_LOW
+    unique_id: 1302_REG_FAN_LEVEL_SAF_LOW
+    slave: 1
+    address: 1302
+    #SAFspeed valueforlowfan speed.
+    #(1):Dependson regulationtype. Value can
+    #be %,RPM, Pressureor Flow
+  - name: 1303_REG_FAN_LEVEL_EAF_LOW
+    unique_id: 1303_REG_FAN_LEVEL_EAF_LOW
+    slave: 1
+    address: 1303
+    #EAFspeed valueforlowfan speed.
+    #(1):Dependson regulationtype. Value can
+    #be %,RPM, Pressureor Flow
+  - name: 1304_REG_FAN_LEVEL_SAF_NORMAL
+    unique_id: 1304_REG_FAN_LEVEL_SAF_NORMAL
+    slave: 1
+    address: 1304
+    #SAFspeed valuefornormal fan speed.
+    #(1):Dependson regulationtype. Value can
+    #be %,RPM, Pressureor Flow
+  - name: 1305_REG_FAN_LEVEL_EAF_NORMAL
+    unique_id: 1305_REG_FAN_LEVEL_EAF_NORMAL
+    slave: 1
+    address: 1305
+    #EAFspeed valuefornormal fan speed.
+    #(1):Dependson regulationtype. Value can
+    #be %,RPM, Pressureor Flow
+  - name: 1306_REG_FAN_LEVEL_SAF_HIGH
+    unique_id: 1306_REG_FAN_LEVEL_SAF_HIGH
+    slave: 1
+    address: 1306
+    #SAFspeed valueforhigh fan speed.
+    #(1):Dependson regulationtype. Value can
+    #be %,RPM, Pressureor Flow
+  - name: 1307_REG_FAN_LEVEL_EAF_HIGH
+    unique_id: 1307_REG_FAN_LEVEL_EAF_HIGH
+    slave: 1
+    address: 1307
+    #EAFspeed valueforhigh fan speed.
+    #(1):Dependson regulationtype. Value can
+    #be %,RPM, Pressureor Flow
+  - name: 1308_REG_FAN_LEVEL_SAF_MAX
+    unique_id: 1308_REG_FAN_LEVEL_SAF_MAX
+    slave: 1
+    address: 1308
+    #SAFspeed valueformaximum fan speed.
+    #(1):Dependson regulationtype. Value can
+    #be %,RPM, Pressureor Flow
+  - name: 1309_REG_FAN_LEVEL_EAF_MAX
+    unique_id: 1309_REG_FAN_LEVEL_EAF_MAX
+    slave: 1
+    address: 1309
+    #EAFspeed valueformaximum fan speed.
+    #(1):Dependson regulationtype. Value can
+    #be %,RPM, Pressureor Flow
+  - name: 1400_REG_FAN_LEVEL_SAF_MIN_PERCENTAGE
+    unique_id: 1400_REG_FAN_LEVEL_SAF_MIN_PERCENTAGE
+    slave: 1
+    address: 1400
+    #SAFspeed valueforminimum fan speed
+  - name: 1401_REG_FAN_LEVEL_EAF_MIN_PERCENTAGE
+    unique_id: 1401_REG_FAN_LEVEL_EAF_MIN_PERCENTAGE
+    slave: 1
+    address: 1401
+    #EAFspeed valueforminimum fan speed
+  - name: 1402_REG_FAN_LEVEL_SAF_LOW_PERCENTAGE    
+    unique_id: 1402_REG_FAN_LEVEL_SAF_LOW_PERCENTAGE
+    slave: 1
+    address: 1402
+    #SAFspeed valueforlowfan speed
+  - name: 1403_REG_FAN_LEVEL_EAF_LOW_PERCENTAGE
+    unique_id: 1403_REG_FAN_LEVEL_EAF_LOW_PERCENTAGE
+    slave: 1
+    address: 1403
+    #EAFspeed valueforlowfan speed
+  - name: 1404_REG_FAN_LEVEL_SAF_NORMAL_PERCENTAGE
+    unique_id: 1404_REG_FAN_LEVEL_SAF_NORMAL_PERCENTAGE
+    slave: 1
+    address: 1404
+    #SAFspeed valuefornormal fan speed
+  - name: 1405_REG_FAN_LEVEL_EAF_NORMAL_PERCENTAGE
+    unique_id: 1405_REG_FAN_LEVEL_EAF_NORMAL_PERCENTAGE
+    slave: 1
+    address: 1405
+    #EAFspeed valuefornormal fan speed
+  - name: 1406_REG_FAN_LEVEL_SAF_HIGH_PERCENTAGE
+    unique_id: 1406_REG_FAN_LEVEL_SAF_HIGH_PERCENTAGE
+    slave: 1
+    address: 1406
+    #SAFspeed valueforhigh fan speed
+  - name: 1407_REG_FAN_LEVEL_EAF_HIGH_PERCENTAGE
+    unique_id: 1407_REG_FAN_LEVEL_EAF_HIGH_PERCENTAGE
+    slave: 1
+    address: 1407
+    #EAFspeed valueforhigh fan speed
+  - name: 1408_REG_FAN_LEVEL_SAF_MAX_PERCENTAGE
+    unique_id: 1408_REG_FAN_LEVEL_SAF_MAX_PERCENTAGE
+    slave: 1
+    address: 1408
+    #SAFspeed valueformaximum fan speed
+  - name: 1409_REG_FAN_LEVEL_EAF_MAX_PERCENTAGE
+    unique_id: 1409_REG_FAN_LEVEL_EAF_MAX_PERCENTAGE
+    slave: 1
+    address: 1409
+    #EAFspeed valueformaximum fan speed
+  - name: 1410_REG_FAN_LEVEL_SAF_MIN_RPM
+    unique_id: 1410_REG_FAN_LEVEL_SAF_MIN_RPM
+    slave: 1
+    address: 1410
+    #SAFspeed valueforminimum fan speed
+  - name: 1411_REG_FAN_LEVEL_EAF_MIN_RPM
+    unique_id: 1411_REG_FAN_LEVEL_EAF_MIN_RPM
+    slave: 1
+    address: 1411
+    #EAFspeed valueforminimum fan speed
+  - name: 1412_REG_FAN_LEVEL_SAF_LOW_RPM
+    unique_id: 1412_REG_FAN_LEVEL_SAF_LOW_RPM
+    slave: 1
+    address: 1412
+    #SAFspeed valueforlowfan speed
+  - name: 1413_REG_FAN_LEVEL_EAF_LOW_RPM
+    unique_id: 1413_REG_FAN_LEVEL_EAF_LOW_RPM
+    slave: 1
+    address: 1413
+    #EAFspeed valueforlowfan speed
+  - name: 1414_REG_FAN_LEVEL_SAF_NORMAL_RPM
+    unique_id: 1414_REG_FAN_LEVEL_SAF_NORMAL_RPM
+    slave: 1
+    address: 1414
+    #SAFspeed valuefornormal fan speed
+  - name: 1415_REG_FAN_LEVEL_EAF_NORMAL_RPM
+    unique_id: 1415_REG_FAN_LEVEL_EAF_NORMAL_RPM
+    slave: 1
+    address: 1415
+    #EAFspeed valuefornormal fan speed
+  - name: 1416_REG_FAN_LEVEL_SAF_HIGH_RPM
+    unique_id: 1416_REG_FAN_LEVEL_SAF_HIGH_RPM
+    slave: 1
+    address: 1416
+    #SAFspeed valueforhigh fan speed
+  - name: 1417_REG_FAN_LEVEL_EAF_HIGH_RPM
+    unique_id: 1417_REG_FAN_LEVEL_EAF_HIGH_RPM
+    slave: 1
+    address: 1417
+    #EAFspeed valueforhigh fan speed
+  - name: 1418_REG_FAN_LEVEL_SAF_MAX_RPM
+    unique_id: 1418_REG_FAN_LEVEL_SAF_MAX_RPM
+    slave: 1
+    address: 1418
+    #SAFspeed valueformaximum fan speed
+  - name: 1419_REG_FAN_LEVEL_EAF_MAX_RPM
+    unique_id: 1419_REG_FAN_LEVEL_EAF_MAX_RPM
+    slave: 1
+    address: 1419
+    #EAFspeed valueformaximum fan speed
+  - name: 1420_REG_FAN_LEVEL_SAF_MIN_PRESSURE
+    unique_id: 1420_REG_FAN_LEVEL_SAF_MIN_PRESSURE
+    slave: 1
+    address: 1420
+    #SAFspeed valueforminimum fan speed
+  - name: 1421_REG_FAN_LEVEL_EAF_MIN_PRESSURE
+    unique_id: 1421_REG_FAN_LEVEL_EAF_MIN_PRESSURE
+    slave: 1
+    address: 1421
+    #EAFspeed valueforminimum fan speed
+  - name: 1422_REG_FAN_LEVEL_SAF_LOW_PRESSURE
+    unique_id: 1422_REG_FAN_LEVEL_SAF_LOW_PRESSURE
+    slave: 1
+    address: 1422
+    #SAFspeed valueforlowfan speed
+  - name: 1423_REG_FAN_LEVEL_EAF_LOW_PRESSURE
+    unique_id: 1423_REG_FAN_LEVEL_EAF_LOW_PRESSURE
+    slave: 1
+    address: 1423
+    #EAFspeed valueforlowfan speed
+  - name: 1424_REG_FAN_LEVEL_SAF_NORMAL_PRESSURE
+    unique_id: 1424_REG_FAN_LEVEL_SAF_NORMAL_PRESSURE
+    slave: 1
+    address: 1424
+    #SAFspeed valuefornormal fan speed
+  - name: 1425_REG_FAN_LEVEL_EAF_NORMAL_PRESSURE
+    unique_id: 1425_REG_FAN_LEVEL_EAF_NORMAL_PRESSURE
+    slave: 1
+    address: 1425
+    #EAFspeed valuefornormal fan speed
+  - name: 1426_REG_FAN_LEVEL_SAF_HIGH_PRESSURE
+    unique_id: 1426_REG_FAN_LEVEL_SAF_HIGH_PRESSURE
+    slave: 1
+    address: 1426
+    #SAFspeed valueforhigh fan speed
+  - name: 1427_REG_FAN_LEVEL_EAF_HIGH_PRESSURE
+    unique_id: 1427_REG_FAN_LEVEL_EAF_HIGH_PRESSURE
+    slave: 1
+    address: 1427
+    #EAFspeed valueforhigh fan speed
+  - name: 1428_REG_FAN_LEVEL_SAF_MAX_PRESSURE
+    unique_id: 1428_REG_FAN_LEVEL_SAF_MAX_PRESSURE
+    slave: 1
+    address: 1428
+    #SAFspeed valueformaximum fan speed
+  - name: 1429_REG_FAN_LEVEL_EAF_MAX_PRESSURE
+    unique_id: 1429_REG_FAN_LEVEL_EAF_MAX_PRESSURE
+    slave: 1
+    address: 1429
+    #EAFspeed valueformaximum fan speed
+  - name: 1430_REG_FAN_LEVEL_SAF_MIN_FLOW
+    unique_id: 1430_REG_FAN_LEVEL_SAF_MIN_FLOW
+    slave: 1
+    address: 1430
+    #SAFspeed valueforminimum fan speed
+  - name: 1431_REG_FAN_LEVEL_EAF_MIN_FLOW
+    unique_id: 1431_REG_FAN_LEVEL_EAF_MIN_FLOW
+    slave: 1
+    address: 1431
+    #EAFspeed valueforminimum fan speed
+  - name: 1432_REG_FAN_LEVEL_SAF_LOW_FLOW
+    unique_id: 1432_REG_FAN_LEVEL_SAF_LOW_FLOW
+    slave: 1
+    address: 1432
+    #SAFspeed valueforlowfan speed
+  - name: 1433_REG_FAN_LEVEL_EAF_LOW_FLOW
+    unique_id: 1433_REG_FAN_LEVEL_EAF_LOW_FLOW
+    slave: 1
+    address: 1433
+    #EAFspeed valueforlowfan speed
+  - name: 1434_REG_FAN_LEVEL_SAF_NORMAL_FLOW
+    unique_id: 1434_REG_FAN_LEVEL_SAF_NORMAL_FLOW
+    slave: 1
+    address: 1434
+    #SAFspeed valuefornormal fan speed
+  - name: 1435_REG_FAN_LEVEL_EAF_NORMAL_FLOW
+    unique_id: 1435_REG_FAN_LEVEL_EAF_NORMAL_FLOW
+    slave: 1
+    address: 1435
+    #EAFspeed valuefornormal fan speed
+  - name: 1436_REG_FAN_LEVEL_SAF_HIGH_FLOW
+    unique_id: 1436_REG_FAN_LEVEL_SAF_HIGH_FLOW
+    slave: 1
+    address: 1436
+    #SAFspeed valueforhigh fan speed
+  - name: 1437_REG_FAN_LEVEL_EAF_HIGH_FLOW
+    unique_id: 1437_REG_FAN_LEVEL_EAF_HIGH_FLOW
+    slave: 1
+    address: 1437
+    #EAFspeed valueforhigh fan speed
+  - name: 1438_REG_FAN_LEVEL_SAF_MAX_FLOW
+    unique_id: 1438_REG_FAN_LEVEL_SAF_MAX_FLOW
+    slave: 1
+    address: 1438
+    #SAFspeed valueformaximum fan speed
+  - name: 1439_REG_FAN_LEVEL_EAF_MAX_FLOW
+    unique_id: 1439_REG_FAN_LEVEL_EAF_MAX_FLOW
+    slave: 1
+    address: 1439
+    #EAFspeed valueformaximum fan speed
+  - name: 2100_REG_INPUT_EXTERNAL_CTRL_SAF
+    unique_id: 2100_REG_INPUT_EXTERNAL_CTRL_SAF
+    slave: 1
+    address: 2100
+    #Value from External Controller Input, SAF.In
+    #%.
+  - name: 2101_REG_INPUT_EXTERNAL_CTRL_EAF
+    unique_id: 2101_REG_INPUT_EXTERNAL_CTRL_EAF
+    slave: 1
+    address: 2101
+    #Value from External Controller Input, EAF. In
+    #%.
+  - name: 14000_REG_OUTPUT_SAF
+    unique_id: 14000_REG_OUTPUT_SAF
+    slave: 1
+    address: 14000
+    #SAFfan speed
+  - name: 14001_REG_OUTPUT_EAF
+    unique_id: 14001_REG_OUTPUT_EAF
+    slave: 1
+    address: 14001
+    #EAFfan speed
+  - name: 14370_REG_OUTPUT_FAN_SPEED1
+    unique_id: 14370_REG_OUTPUT_FAN_SPEED1
+    slave: 1
+    address: 14370
+    #Supplyair fan controlsignal in %
+  - name: 14371_REG_OUTPUT_FAN_SPEED2
+    unique_id: 14371_REG_OUTPUT_FAN_SPEED2
+    slave: 1
+    address: 14371
+    #Extract airfan control signalin %
+  - name: 1250_REG_FAN_OUTDOOR_COMP_TYPE
+    unique_id: 1250_REG_FAN_OUTDOOR_COMP_TYPE
+    slave: 1
+    address: 1250
+    #Compensateonly SFor both SFand EF
+    #0: SAF
+    #1: SAF/EAF
+  - name: 1251_REG_FAN_OUTDOOR_COMP_MAX_VALUE
+    unique_id: 1251_REG_FAN_OUTDOOR_COMP_MAX_VALUE
+    slave: 1
+    address: 1251
+    #Compensationvalueatlowest temperature.
+  - name: 1252_REG_FAN_OUTDOOR_COMP_STOP_T_WINTER
+    unique_id: 1252_REG_FAN_OUTDOOR_COMP_STOP_T_WINTER
+    slave: 1
+    address: 1252
+    #Temperatureat which compensation
+    #reaches maximum value during thewinter
+    #period.
+  - name: 1253_REG_FAN_OUTDOOR_COMP_MAX_TEMP
+    unique_id: 1253_REG_FAN_OUTDOOR_COMP_MAX_TEMP
+    slave: 1
+    address: 1253
+    #Temperatureat which highest
+    #compensation is applied.
+  - name: 1255_REG_FAN_OUTDOOR_COMP_START_T_WINTER
+    unique_id: 1255_REG_FAN_OUTDOOR_COMP_START_T_WINTER
+    slave: 1
+    address: 1255
+    #Temperatureat which compensation starts
+    #during thewinter period.
+  - name: 1256_REG_FAN_OUTDOOR_COMP_START_T_SUMMER
+    unique_id: 1256_REG_FAN_OUTDOOR_COMP_START_T_SUMMER
+    slave: 1
+    address: 1256
+    #Temperatureat which compensation starts
+    #during thesummer period.
+  - name: 1257_REG_FAN_OUTDOOR_COMP_STOP_T_SUMMER
+    unique_id: 1257_REG_FAN_OUTDOOR_COMP_STOP_T_SUMMER
+    slave: 1
+    address: 1257
+    #Temperatureat which compensation
+    #reaches maximum value during thesummer
+    #period.
+  - name: 1258_REG_FAN_OUTDOOR_COMP_VALUE_SUMMER
+    unique_id: 1258_REG_FAN_OUTDOOR_COMP_VALUE_SUMMER
+    slave: 1
+    address: 1258
+    #Compensationvalueduring summer period
+  - name: 2310_REG_COOLER_FROM_SATC
+    unique_id: 2310_REG_COOLER_FROM_SATC
+    slave: 1
+    address: 2310
+    #Cooler signal
+  - name: 2315_REG_COOLER_OAT_INTERLOCK_T
+    unique_id: 2315_REG_COOLER_OAT_INTERLOCK_T
+    slave: 1
+    address: 2315
+    #Temperatureat which coolingis interlocked
+  - name: 2313_REG_COOLER_CIRC_PUMP_START_T
+    unique_id: 2313_REG_COOLER_CIRC_PUMP_START_T
+    slave: 1
+    address: 2313
+    #Temperatureat which thecoolercirculation
+    #pumpis started
+  - name: 2316_REG_COOLER_CIRC_PUMP_STOP_DELAY
+    unique_id: 2316_REG_COOLER_CIRC_PUMP_STOP_DELAY
+    slave: 1
+    address: 2316
+    #Offtime delayforthecoolercirculation
+    #pumpin minutes
+  - name: 14301_REG_OUTPUT_Y3_CIRC_PUMP
+    unique_id: 14301_REG_OUTPUT_Y3_CIRC_PUMP
+    slave: 1
+    address: 14301
+    #Coolercirculationpump output
+  - name: 14200_REG_OUTPUT_Y3_ANALOG
+    unique_id: 14200_REG_OUTPUT_Y3_ANALOG
+    slave: 1
+    address: 14200
+    #Cooler AO state.
+  - name: 14201_REG_OUTPUT_Y3_DIGITAL
+    unique_id: 14201_REG_OUTPUT_Y3_DIGITAL
+    slave: 1
+    address: 14201
+    #Cooler DOstate:
+    #0: Outputnot active
+    #1: Outputactive
+  - name: 9002_REG_SYSTEM_UNIT_TEMPERATURE
+    unique_id: 9002_REG_SYSTEM_UNIT_TEMPERATURE
+    slave: 1
+    address: 9002
+    #Unitsfortemperature.
+    #0: Celcius
+    #1: Fahrenheit
+  - name: 2030_REG_TC_CONTROL_MODE
+    unique_id: 2030_REG_TC_CONTROL_MODE
+    slave: 1
+    address: 2030
+    #Unittemperature controlmode
+    #0: Supply
+    #1: Room
+    #2: Extract
+  - name: 2000_REG_TC_SP
+    unique_id: 2000_REG_TC_SP
+    slave: 1
+    address: 2000
+    #Temperaturesetpoint forthe supplyair
+    #temperature
+  - name: 2053_REG_TC_SP_SATC
+    unique_id: 2053_REG_TC_SP_SATC
+    slave: 1
+    address: 2053
+    #Temperaturesetpoint forthe supplyair
+    #temperature
+  - name: 2012_REG_TC_CASCADE_SP
+    unique_id: 2012_REG_TC_CASCADE_SP
+    slave: 1
+    address: 2012
+    #Temperatureset pointforSATC, as
+    #calculated byRATC/EATC during cascade
+    #control
+  - name: 2052_REG_TC_ROOM_CTRL_SP_SATC
+    unique_id: 2052_REG_TC_ROOM_CTRL_SP_SATC
+    slave: 1
+    address: 2052
+    #Temperatureset pointforSATC, as
+    #calculated byRATC/EATC during cascade
+    #control
+  - name: 2020_REG_TC_CASCADE_SP_MIN
+    unique_id: 2020_REG_TC_CASCADE_SP_MIN
+    slave: 1
+    address: 2020
+    #Minimum temperaturesetpoint forthe
+    #SATC
+  - name: 2021_REG_TC_CASCADE_SP_MAX
+    unique_id: 2021_REG_TC_CASCADE_SP_MAX
+    slave: 1
+    address: 2021
+    #Maximum temperaturesetpoint forthe
+    #SATC
+  - name: 2050_REG_TC_EAT_RAT_SP
+    unique_id: 2050_REG_TC_EAT_RAT_SP
+    slave: 1
+    address: 2050
+    #EATor RAT value,usedforroom/extractair
+    #controller.
+  - name: 2054_REG_SATC_HEAT_DEMAND
+    unique_id: 2054_REG_SATC_HEAT_DEMAND
+    slave: 1
+    address: 2054
+    #Outputof theSATC (0-100%)
+  - name: 2060_REG_SATC_PI_SP
+    unique_id: 2060_REG_SATC_PI_SP
+    slave: 1
+    address: 2060
+    #SATCsetpoint value
+  - name: 2068_REG_SATC_PI_OUTPUT
+    unique_id: 2068_REG_SATC_PI_OUTPUT
+    slave: 1
+    address: 2068
+    #SATCoutput signal
+  - name: 2070_REG_ROOM_CTRL_PI_SP
+    unique_id: 2070_REG_ROOM_CTRL_PI_SP
+    slave: 1
+    address: 2070
+    #RATCsetpoint value
+  - name: 2078_REG_ROOM_CTRL_PI_OUTPUT
+    unique_id: 2078_REG_ROOM_CTRL_PI_OUTPUT
+    slave: 1
+    address: 2078
+    #RATCoutput signal
+  - name: 2112_REG_HEATER_CIRC_PUMP_START_T
+    unique_id: 2112_REG_HEATER_CIRC_PUMP_START_T
+    slave: 1
+    address: 2112
+    #Temperatureat which theHeatercirculation
+    #pumpis started
+  - name: 2121_REG_HEATER_CIRC_PUMP_STOP_DELAY
+    unique_id: 2121_REG_HEATER_CIRC_PUMP_STOP_DELAY
+    slave: 1
+    address: 2121
+    #Offtime delayfortheheatercirculation
+    #pumpin minutes
+  - name: 14300_REG_OUTPUT_Y1_CIRC_PUMP
+    unique_id: 14300_REG_OUTPUT_Y1_CIRC_PUMP
+    slave: 1
+    address: 14300
+    #Heatingcirculationpump output
+  - name: 1356_REG_SPEED_ELECTRICAL_HEATER_HOT_COUNTER
+    unique_id: 1356_REG_SPEED_ELECTRICAL_HEATER_HOT_COUNTER
+    slave: 1
+    address: 1356
+    #ElectricalHeaterhot counter.Count down
+    #from 120 sec.
+  - name: 1357_REG_FAN_SPEED_AFTER_HEATER_COOLING_DOWN_SAF
+    unique_id: 1357_REG_FAN_SPEED_AFTER_HEATER_COOLING_DOWN_SAF
+    slave: 1
+    address: 1357
+    #Supply AirFan SpeedLevelAfterHeater
+    #CoolingDown
+  - name: 1358_REG_FAN_SPEED_AFTER_HEATER_COOLING_DOWN_EAF
+    unique_id: 1358_REG_FAN_SPEED_AFTER_HEATER_COOLING_DOWN_EAF
+    slave: 1
+    address: 1358
+    #Extract AirFan Speed LevelAfterHeater
+    #CoolingDown
+  - name: 3112_REG_FUNCTION_ACTIVE_HEATER_COOL_DOWN
+    unique_id: 3112_REG_FUNCTION_ACTIVE_HEATER_COOL_DOWN
+    slave: 1
+    address: 3112
+    #ActiveHeater Cool Down
+  - name: 13200_REG_OUTPUT_TRIAC_CONFIGURED
+    unique_id: 13200_REG_OUTPUT_TRIAC_CONFIGURED
+    slave: 1
+    address: 13200
+    #Indicatesif theTRIAC shall be used
+  - name: 2148_REG_PWM_TRIAC_OUTPUT
+    unique_id: 2148_REG_PWM_TRIAC_OUTPUT
+    slave: 1
+    address: 2148
+    #TRIACafter manualoverride
+  - name: 14380_REG_OUTPUT_TRIAC
+    unique_id: 14380_REG_OUTPUT_TRIAC
+    slave: 1
+    address: 14380
+    #TRIACcontrol signal
+  - name: 14100_REG_OUTPUT_Y1_ANALOG
+    unique_id: 14100_REG_OUTPUT_Y1_ANALOG
+    slave: 1
+    address: 14100
+    #HeaterAO state.
+  - name: 14101_REG_OUTPUT_Y1_DIGITAL
+    unique_id: 14101_REG_OUTPUT_Y1_DIGITAL
+    slave: 1
+    address: 14101
+    #HeaterDOstate:
+    #0: Outputnot active
+    #1: Outputactive
+  - name: 2403_REG_EXTRA_CONTROLLER_CIRC_PUMP_START_T
+    unique_id: 2403_REG_EXTRA_CONTROLLER_CIRC_PUMP_START_T
+    slave: 1
+    address: 2403
+    #Start temperatureforextra controller
+    #circulationpump
+  - name: 2404_REG_EXTRA_CONTROLLER_CIRC_PUMP_STOP_DELAY
+    unique_id: 2404_REG_EXTRA_CONTROLLER_CIRC_PUMP_STOP_DELAY
+    slave: 1
+    address: 2404
+    #Offtime delayfortheextra controller
+    #circulationpump in minutes
+  - name: 14303_REG_OUTPUT_Y4_CIRC_PUMP
+    unique_id: 14303_REG_OUTPUT_Y4_CIRC_PUMP
+    slave: 1
+    address: 14303
+    #Extra controllercirculationpump output
+  - name: 2402_REG_EXTRA_CONTROLLER_SET_PI_SETPOINT
+    unique_id: 2402_REG_EXTRA_CONTROLLER_SET_PI_SETPOINT
+    slave: 1
+    address: 2402
+    #Setpoint valuefortheextra controller PI
+    #    #regulator
+  - name: 2417_REG_EXTRA_CONTROLLER_PREHEATER_SETPOINT_TYPE
+    unique_id: 2417_REG_EXTRA_CONTROLLER_PREHEATER_SETPOINT_TYPE
+    slave: 1
+    address: 2417
+    #Temperaturesetpoint forthe preheater.
+    #0: Auto
+    #1: Manual
+  - name: 2419_REG_EXTRA_CONTROLLER_GEO_PREHEATER_SP
+    unique_id: 2419_REG_EXTRA_CONTROLLER_GEO_PREHEATER_SP
+    slave: 1
+    address: 2419
+    #
+  - name: 2420_REG_EXTRA_CONTROLLER_GEO_PREHEATER_ACTIVATION_T
+    unique_id: 2420_REG_EXTRA_CONTROLLER_GEO_PREHEATER_ACTIVATION_T
+    slave: 1
+    address: 2420
+    #
+  - name: 2421_REG_EXTRA_CONTROLLER_GEO_PRECOOLER_SP
+    unique_id: 2421_REG_EXTRA_CONTROLLER_GEO_PRECOOLER_SP
+    slave: 1
+    address: 2421
+    #
+  - name: 2422_REG_EXTRA_CONTROLLER_GEO_PRECOOLER_ACTIVATION_T
+    unique_id: 2422_REG_EXTRA_CONTROLLER_GEO_PRECOOLER_ACTIVATION_T
+    slave: 1
+    address: 2422
+    #
+  - name: 12309_REG_SENSOR_DI_EXTRA_CONTROLLER_EMT
+    unique_id: 12309_REG_SENSOR_DI_EXTRA_CONTROLLER_EMT
+    slave: 1
+    address: 12309
+    #Extra controller EMTinput value
+  - name: 14202_REG_OUTPUT_Y4_ANALOG
+    unique_id: 14202_REG_OUTPUT_Y4_ANALOG
+    slave: 1
+    address: 14202
+    #Extra controller AO state.
+  - name: 14203_REG_OUTPUT_Y4_DIGITAL
+    unique_id: 14203_REG_OUTPUT_Y4_DIGITAL
+    slave: 1
+    address: 14203
+    #Extra controller DOstate:
+    #0: Outputnot active
+    #1: Outputactive
+  - name: 2314_REG_COOLER_RECOVERY_LIMIT_T
+    unique_id: 2314_REG_COOLER_RECOVERY_LIMIT_T
+    slave: 1
+    address: 2314
+    #Temperatureat which coolingrecovery is
+    #allowed
+  - name: 2133_REG_HEAT_EXCHANGER_COOLING_RECOVERY_ON_OFF
+    unique_id: 2133_REG_HEAT_EXCHANGER_COOLING_RECOVERY_ON_OFF
+    slave: 1
+    address: 2133
+    #Enablingof coolingrecovery
+  - name: 2503_REG_ECO_T_Y1_OFFSET
+    unique_id: 2503_REG_ECO_T_Y1_OFFSET
+    slave: 1
+    address: 2503
+    #Temperatureoffset forheatingduring Eco
+    #mode
+  - name: 2504_REG_ECO_MODE_ON_OFF
+    unique_id: 2504_REG_ECO_MODE_ON_OFF
+    slave: 1
+    address: 2504
+    #Enablingof ecomode
+  - name: 2505_REG_ECO_FUNCTION_ACTIVE
+    unique_id: 2505_REG_ECO_FUNCTION_ACTIVE
+    slave: 1
+    address: 2505
+    #Indicatesif conditionsforECOmode are
+    #a    #ctive(lowtemperature)
+  - name: 2450_REG_CHANGE_OVER_CIRC_PUMP_START_T
+    unique_id: 2450_REG_CHANGE_OVER_CIRC_PUMP_START_T
+    slave: 1
+    address: 2450
+    #Start temperatureforthechange-over
+    #circulationpump
+  - name: 2451_REG_CHANGE_OVER_CIRC_PUMP_STOP_DELAY
+    unique_id: 2451_REG_CHANGE_OVER_CIRC_PUMP_STOP_DELAY
+    slave: 1
+    address: 2451
+    #Offtime delayforthechange-over
+    #circulationpump in minutes
+  - name: 14302_REG_OUTPUT_Y1_Y3_CIRC_PUMP
+    unique_id: 14302_REG_OUTPUT_Y1_Y3_CIRC_PUMP
+    slave: 1
+    address: 14302
+    #Change-overcirculationpump output
+  - name: 2146_REG_HEAT_EXCHANGER_RH_TRANSFER_CTRL_ENABLED
+    unique_id: 2146_REG_HEAT_EXCHANGER_RH_TRANSFER_CTRL_ENABLED
+    slave: 1
+    address: 2146
+    #Indicatesif RHtrasnfercontrol shall be
+    #applied
+  - name: 2200_REG_ROTOR_RH_TRANSFER_CTRL_PBAND
+    unique_id: 2200_REG_ROTOR_RH_TRANSFER_CTRL_PBAND
+    slave: 1
+    address: 2200
+    #Pband settingforRHtransfercontrol
+  - name: 2201_REG_ROTOR_RH_TRANSFER_CTRL_ITIME
+    unique_id: 2201_REG_ROTOR_RH_TRANSFER_CTRL_ITIME
+    slave: 1
+    address: 2201
+    #Itimesetting forRH transfercontrol
+  - name: 2202_REG_ROTOR_RH_TRANSFER_CTRL_SETPOINT
+    unique_id: 2202_REG_ROTOR_RH_TRANSFER_CTRL_SETPOINT
+    slave: 1
+    address: 2202
+    #Setpoint settingforRHtransfercontrol
+  - name: 2203_REG_ROTOR_RH_TRANSFER_CTRL_ON_OFF
+    unique_id: 2203_REG_ROTOR_RH_TRANSFER_CTRL_ON_OFF
+    slave: 1
+    address: 2203
+    #Enablingof humidity transfercontrol
+  - name: 4100_REG_FREE_COOLING_ON_OFF
+    unique_id: 4100_REG_FREE_COOLING_ON_OFF
+    slave: 1
+    address: 4100
+    #Indicatesif freecoolingis enabled
+  - name: 4101_REG_FREE_COOLING_OUTDOOR_DAYTIME_T
+    unique_id: 4101_REG_FREE_COOLING_OUTDOOR_DAYTIME_T
+    slave: 1
+    address: 4101
+    #Minimum of highest daytimetemperature
+    #forstart offreecooling.
+  - name: 4102_REG_FREE_COOLING_OUTDOOR_NIGHTTIME_DEACTIVATION_HIGH_T_LIMIT
+    unique_id: 4102_REG_FREE_COOLING_OUTDOOR_NIGHTTIME_DEACTIVATION_HIGH_T_LIMIT
+    slave: 1
+    address: 4102
+    #Highestnight temperature limitfor
+    #termination freecooling
+  - name: 4103_REG_FREE_COOLING_OUTDOOR_NIGHTTIME_DEACTIVATION_LOW_T_LIMIT
+    unique_id: 4103_REG_FREE_COOLING_OUTDOOR_NIGHTTIME_DEACTIVATION_LOW_T_LIMIT
+    slave: 1
+    address: 4103
+    #Lowestnight temperaturelimit for
+    #termination freecooling
+  - name: 4104_REG_FREE_COOLING_ROOM_CANCEL_T
+    unique_id: 4104_REG_FREE_COOLING_ROOM_CANCEL_T
+    slave: 1
+    address: 4104
+    #Lowesttemperatureroomtemperaturefor
+    #termination offreecooling
+  - name: 4105_REG_FREE_COOLING_START_TIME_H
+    unique_id: 4105_REG_FREE_COOLING_START_TIME_H
+    slave: 1
+    address: 4105
+    #Start time offreecoolingnight-period,hour.
+    #Validrangeis from 0to 8and from21 to
+    #23.
+  - name: 4106_REG_FREE_COOLING_START_TIME_M
+    unique_id: 4106_REG_FREE_COOLING_START_TIME_M
+    slave: 1
+    address: 4106
+    #Start time offreecoolingnight-period,
+    #Minute
+  - name: 4107_REG_FREE_COOLING_END_TIME_H
+    unique_id: 4107_REG_FREE_COOLING_END_TIME_H
+    slave: 1
+    address: 4107
+    #Endtime of free coolingnight-period, hour.
+    #Validrangeis from 0to 8and from21 to
+    #23.
+  - name: 4108_REG_FREE_COOLING_END_TIME_M
+    unique_id: 4108_REG_FREE_COOLING_END_TIME_M
+    slave: 1
+    address: 4108
+    #Endtime of free coolingnight-period,
+    #Minute
+  - name: 4110_REG_FREE_COOLING_ACTIVE
+    unique_id: 4110_REG_FREE_COOLING_ACTIVE
+    slave: 1
+    address: 4110
+    #Indicatesif freecoolingis beingperformed
+  - name: 4111_REG_FREE_COOLING_MIN_SPEED_LEVEL_SAF
+    unique_id: 4111_REG_FREE_COOLING_MIN_SPEED_LEVEL_SAF
+    slave: 1
+    address: 4111
+    #Minimum speed levelduring freecooling,
+    #SAF.
+    #: Normal
+    #4: High
+    #5: Maximum
+  - name: 4112_REG_FREE_COOLING_MIN_SPEED_LEVEL_EAF
+    unique_id: 4112_REG_FREE_COOLING_MIN_SPEED_LEVEL_EAF
+    slave: 1
+    address: 4112
+    #Minimum speed levelduring freecooling,
+    #EAF.
+    #3: Normal
+    #4: High
+    #5: Maximum
+  - name: 4100_REG_FREE_COOLING_ON_OFF
+    unique_id: 4100_REG_FREE_COOLING_ON_OFF
+    slave: 1
+    address: 4100
+    #Indicatesif freecoolingis enabled
+  - name: 5000_REG_WS_T_OFFSET_ACTIVE
+    unique_id: 5000_REG_WS_T_OFFSET_ACTIVE
+    slave: 1
+    address: 5000
+    #Temperatureoffset during activeweek
+    #schedule.
+  - name: 5001_REG_WS_T_OFFSET_INACTIVE
+    unique_id: 5001_REG_WS_T_OFFSET_INACTIVE
+    slave: 1
+    address: 5001
+    #Temperatureoffset during inactiveweek
+    #schedule.
+  - name: 5002_REG_WS_DAY1_PRD1_START_H
+    unique_id: 5002_REG_WS_DAY1_PRD1_START_H
+    slave: 1
+    address: 5002
+    #Monday,Period 1,start
+  - name: 5003_REG_WS_DAY1_PRD1_START_M
+    unique_id: 5003_REG_WS_DAY1_PRD1_START_M
+    slave: 1
+    address: 5003
+    #
+  - name: 5004_REG_WS_DAY1_PRD1_END_H
+    unique_id: 5004_REG_WS_DAY1_PRD1_END_H
+    slave: 1
+    address: 5004
+    #Monday,Period 1,end
+  - name: 5005_REG_WS_DAY1_PRD1_END_M
+    unique_id: 5005_REG_WS_DAY1_PRD1_END_M
+    slave: 1
+    address: 5005
+    #
+  - name: 5006_REG_WS_DAY1_PRD2_START_H
+    unique_id: 5006_REG_WS_DAY1_PRD2_START_H
+    slave: 1
+    address: 5006
+    #Monday,Period 2,start
+  - name: 5007_REG_WS_DAY1_PRD2_START_M
+    unique_id: 5007_REG_WS_DAY1_PRD2_START_M
+    slave: 1
+    address: 5007
+    #
+  - name: 5008_REG_WS_DAY1_PRD2_END_H
+    unique_id: 5008_REG_WS_DAY1_PRD2_END_H
+    slave: 1
+    address: 5008
+    #Monday,Period 2,end
+  - name: 5009_REG_WS_DAY1_PRD2_END_M
+    unique_id: 5009_REG_WS_DAY1_PRD2_END_M
+    slave: 1
+    address: 5009
+    #
+  - name: 5010_REG_WS_DAY2_PRD1_START_H
+    unique_id: 5010_REG_WS_DAY2_PRD1_START_H
+    slave: 1
+    address: 5010
+    #Tuesday,Period 1, start
+  - name: 5011_REG_WS_DAY2_PRD1_START_M
+    unique_id: 5011_REG_WS_DAY2_PRD1_START_M
+    slave: 1
+    address: 5011
+    #
+  - name: 5012_REG_WS_DAY2_PRD1_END_H
+    unique_id: 5012_REG_WS_DAY2_PRD1_END_H
+    slave: 1
+    address: 5012
+    #Tuesday,Period 1, end
+  - name: 5013_REG_WS_DAY2_PRD1_END_M
+    unique_id: 5013_REG_WS_DAY2_PRD1_END_M
+    slave: 1
+    address: 5013
+    #
+  - name: 5014_REG_WS_DAY2_PRD2_START_H
+    unique_id: 5014_REG_WS_DAY2_PRD2_START_H
+    slave: 1
+    address: 5014
+    #Tuesday,Period 2, start
+  - name: 5015_REG_WS_DAY2_PRD2_START_M
+    unique_id: 5015_REG_WS_DAY2_PRD2_START_M
+    slave: 1
+    address: 5015
+    #
+  - name: 5016_REG_WS_DAY2_PRD2_END_H
+    unique_id: 5016_REG_WS_DAY2_PRD2_END_H
+    slave: 1
+    address: 5016
+    #Tuesday,Period 2, end
+  - name: 5017_REG_WS_DAY2_PRD2_END_M
+    unique_id: 5017_REG_WS_DAY2_PRD2_END_M
+    slave: 1
+    address: 5017
+    #
+  - name: 5018_REG_WS_DAY3_PRD1_START_H
+    unique_id: 5018_REG_WS_DAY3_PRD1_START_H
+    slave: 1
+    address: 5018
+    #Wednesday,Period 1, start
+  - name: 5019_REG_WS_DAY3_PRD1_START_M
+    unique_id: 5019_REG_WS_DAY3_PRD1_START_M
+    slave: 1
+    address: 5019
+    #
+  - name: 5020_REG_WS_DAY3_PRD1_END_H
+    unique_id: 5020_REG_WS_DAY3_PRD1_END_H
+    slave: 1
+    address: 5020
+    #Wednesday,Period 1, end
+  - name: 5021_REG_WS_DAY3_PRD1_END_M
+    unique_id: 5021_REG_WS_DAY3_PRD1_END_M
+    slave: 1
+    address: 5021
+    #
+  - name: 5022_REG_WS_DAY3_PRD2_START_H
+    unique_id: 5022_REG_WS_DAY3_PRD2_START_H
+    slave: 1
+    address: 5022
+    #Wednesday,Period 2, start
+  - name: 5023_REG_WS_DAY3_PRD2_START_M
+    unique_id: 5023_REG_WS_DAY3_PRD2_START_M
+    slave: 1
+    address: 5023
+    #
+  - name: 5024_REG_WS_DAY3_PRD2_END_H
+    unique_id: 5024_REG_WS_DAY3_PRD2_END_H
+    slave: 1
+    address: 5024
+    #Wednesday,Period 2, end
+  - name: 5025_REG_WS_DAY3_PRD2_END_M
+    unique_id: 5025_REG_WS_DAY3_PRD2_END_M
+    slave: 1
+    address: 5025
+    #
+  - name: 5026_REG_WS_DAY4_PRD1_START_H
+    unique_id: 5026_REG_WS_DAY4_PRD1_START_H
+    slave: 1
+    address: 5026
+    #Thursday,Period 1,start
+  - name: 5027_REG_WS_DAY4_PRD1_START_M
+    unique_id: 5027_REG_WS_DAY4_PRD1_START_M
+    slave: 1
+    address: 5027
+    #
+  - name: 5028_REG_WS_DAY4_PRD1_END_H
+    unique_id: 5028_REG_WS_DAY4_PRD1_END_H
+    slave: 1
+    address: 5028
+    #Thursday,Period 1,end
+  - name: 5029_REG_WS_DAY4_PRD1_END_M
+    unique_id: 5029_REG_WS_DAY4_PRD1_END_M
+    slave: 1
+    address: 5029
+    #
+  - name: 5030_REG_WS_DAY4_PRD2_START_H
+    unique_id: 5030_REG_WS_DAY4_PRD2_START_H
+    slave: 1
+    address: 5030
+    #Thursday,Period 2,start
+  - name: 5031_REG_WS_DAY4_PRD2_START_M
+    unique_id: 5031_REG_WS_DAY4_PRD2_START_M
+    slave: 1
+    address: 5031
+    #
+  - name: 5032_REG_WS_DAY4_PRD2_END_H
+    unique_id: 5032_REG_WS_DAY4_PRD2_END_H
+    slave: 1
+    address: 5032
+    #Thursday,Period 2,end
+  - name: 5033_REG_WS_DAY4_PRD2_END_M
+    unique_id: 5033_REG_WS_DAY4_PRD2_END_M
+    slave: 1
+    address: 5033
+    #
+  - name: 5034_REG_WS_DAY5_PRD1_START_H
+    unique_id: 5034_REG_WS_DAY5_PRD1_START_H
+    slave: 1
+    address: 5034
+    #Friday,Period 1,start
+  - name: 5035_REG_WS_DAY5_PRD1_START_M
+    unique_id: 5035_REG_WS_DAY5_PRD1_START_M
+    slave: 1
+    address: 5035
+    #
+  - name: 5036_REG_WS_DAY5_PRD1_END_H
+    unique_id: 5036_REG_WS_DAY5_PRD1_END_H
+    slave: 1
+    address: 5036
+    #Friday,Period 1,end
+  - name: 5037_REG_WS_DAY5_PRD1_END_M
+    unique_id: 5037_REG_WS_DAY5_PRD1_END_M
+    slave: 1
+    address: 5037
+    #
+  - name: 5038_REG_WS_DAY5_PRD2_START_H
+    unique_id: 5038_REG_WS_DAY5_PRD2_START_H
+    slave: 1
+    address: 5038
+    #Friday,Period 2,start
+  - name: 5039_REG_WS_DAY5_PRD2_START_M
+    unique_id: 5039_REG_WS_DAY5_PRD2_START_M
+    slave: 1
+    address: 5039
+    #
+  - name: 5040_REG_WS_DAY5_PRD2_END_H
+    unique_id: 5040_REG_WS_DAY5_PRD2_END_H
+    slave: 1
+    address: 5040
+    #Friday,Period 2,end
+  - name: 5041_REG_WS_DAY5_PRD2_END_M
+    unique_id: 5041_REG_WS_DAY5_PRD2_END_M
+    slave: 1
+    address: 5041
+    #
+  - name: 5042_REG_WS_DAY6_PRD1_START_H
+    unique_id: 5042_REG_WS_DAY6_PRD1_START_H
+    slave: 1
+    address: 5042
+    #Saturday,Period 1, start
+  - name: 5043_REG_WS_DAY6_PRD1_START_M
+    unique_id: 5043_REG_WS_DAY6_PRD1_START_M
+    slave: 1
+    address: 5043
+    #
+  - name: 5044_REG_WS_DAY6_PRD1_END_H
+    unique_id: 5044_REG_WS_DAY6_PRD1_END_H
+    slave: 1
+    address: 5044
+    #Saturday,Period 1, end
+  - name: 5045_REG_WS_DAY6_PRD1_END_M
+    unique_id: 5045_REG_WS_DAY6_PRD1_END_M
+    slave: 1
+    address: 5045
+    #
+  - name: 5046_REG_WS_DAY6_PRD2_START_H
+    unique_id: 5046_REG_WS_DAY6_PRD2_START_H
+    slave: 1
+    address: 5046
+    #Saturday,Period 2, start
+  - name: 5047_REG_WS_DAY6_PRD2_START_M
+    unique_id: 5047_REG_WS_DAY6_PRD2_START_M
+    slave: 1
+    address: 5047
+    #
+  - name: 5048_REG_WS_DAY6_PRD2_END_H
+    unique_id: 5048_REG_WS_DAY6_PRD2_END_H
+    slave: 1
+    address: 5048
+    #Saturday,Period 2, end
+  - name: 5049_REG_WS_DAY6_PRD2_END_M
+    unique_id: 5049_REG_WS_DAY6_PRD2_END_M
+    slave: 1
+    address: 5049
+    #
+  - name: 5050_REG_WS_DAY7_PRD1_START_H
+    unique_id: 5050_REG_WS_DAY7_PRD1_START_H
+    slave: 1
+    address: 5050
+    #Sunday,Period 1,start
+  - name: 5051_REG_WS_DAY7_PRD1_START_M
+    unique_id: 5051_REG_WS_DAY7_PRD1_START_M
+    slave: 1
+    address: 5051
+    #
+  - name: 5052_REG_WS_DAY7_PRD1_END_H
+    unique_id: 5052_REG_WS_DAY7_PRD1_END_H
+    slave: 1
+    address: 5052
+    #Sunday,Period 1,end
+  - name: 5053_REG_WS_DAY7_PRD1_END_M
+    unique_id: 5053_REG_WS_DAY7_PRD1_END_M
+    slave: 1
+    address: 5053
+    #
+  - name: 5054_REG_WS_DAY7_PRD2_START_H
+    unique_id: 5054_REG_WS_DAY7_PRD2_START_H
+    slave: 1
+    address: 5054
+    #Sunday,Period 2,start
+  - name: 5055_REG_WS_DAY7_PRD2_START_M
+    unique_id: 5055_REG_WS_DAY7_PRD2_START_M
+    slave: 1
+    address: 5055
+    #
+  - name: 5056_REG_WS_DAY7_PRD2_END_H
+    unique_id: 5056_REG_WS_DAY7_PRD2_END_H
+    slave: 1
+    address: 5056
+    #Sunday,Period 2,end
+  - name: 5057_REG_WS_DAY7_PRD2_END_M
+    unique_id: 5057_REG_WS_DAY7_PRD2_END_M
+    slave: 1
+    address: 5057
+    #
+  - name: 5058_REG_WS_ACTIVE
+    unique_id: 5058_REG_WS_ACTIVE
+    slave: 1
+    address: 5058
+    #Indicatesthat thecurrenttime layswithin
+    #theindicatedintervals
+  - name: 5059_REG_WS_FAN_LEVEL_SCHEDULED
+    unique_id: 5059_REG_WS_FAN_LEVEL_SCHEDULED
+    slave: 1
+    address: 5059
+    #Fanspeed levelsforSAF and EAF during
+    #activeweekschedule.
+    #1: Off(1)
+    #2: Low
+    #3: Normal
+    #4: High
+    #5: Demand(2)
+    #(1):Off availableif Manual Fan Stopis
+    #enabled.
+    #(2):Demand available ifdemand control
+    #activeorexternalfan controlenabled.
+  - name: 5060_REG_WS_FAN_LEVEL_UNSCHEDULED
+    unique_id: 5060_REG_WS_FAN_LEVEL_UNSCHEDULED
+    slave: 1
+    address: 5060
+    #Fanspeed levelsforSAF and EAF during
+    #inactiveweekschedule.
+    #1: Off(1)
+    #2: Low
+    #3: Normal
+    #4: High
+    #5: Demand(2)
+    #(1):Off availableif Manual Fan Stopis
+    #enabled.
+    #(2):Demand available ifdemand control
+    #activeorexternalfan controlenabled.
+  - name: 5100_REG_WS_DAY1_PRD1_ENABLED
+    unique_id: 5100_REG_WS_DAY1_PRD1_ENABLED
+    slave: 1
+    address: 5100
+    #Flag indicatingif thisperiod is enabled.
+  - name: 5101_REG_WS_DAY1_PRD2_ENABLED
+    unique_id: 5101_REG_WS_DAY1_PRD2_ENABLED
+    slave: 1
+    address: 5101
+    #Flag indicatingif thisperiod is enabled.
+  - name: 5102_REG_WS_DAY2_PRD1_ENABLED
+    unique_id: 5102_REG_WS_DAY2_PRD1_ENABLED
+    slave: 1
+    address: 5102
+    #Flag indicatingif thisperiod is enabled.
+  - name: 5103_REG_WS_DAY2_PRD2_ENABLED
+    unique_id: 5103_REG_WS_DAY2_PRD2_ENABLED
+    slave: 1
+    address: 5103
+    #Flag indicatingif thisperiod is enabled.
+  - name: 5104_REG_WS_DAY3_PRD1_ENABLED
+    unique_id: 5104_REG_WS_DAY3_PRD1_ENABLED
+    slave: 1
+    address: 5104
+    #Flag indicatingif thisperiod is enabled.
+  - name: 5105_REG_WS_DAY3_PRD2_ENABLED
+    unique_id: 5105_REG_WS_DAY3_PRD2_ENABLED
+    slave: 1
+    address: 5105
+    #Flag indicatingif thisperiod is enabled.
+  - name: 5106_REG_WS_DAY4_PRD1_ENABLED
+    unique_id: 5106_REG_WS_DAY4_PRD1_ENABLED
+    slave: 1
+    address: 5106
+    #Flag indicatingif thisperiod is enabled.
+  - name: 5107_REG_WS_DAY4_PRD2_ENABLED
+    unique_id: 5107_REG_WS_DAY4_PRD2_ENABLED
+    slave: 1
+    address: 5107
+    #Flag indicatingif thisperiod is enabled.
+  - name: 5108_REG_WS_DAY5_PRD1_ENABLED
+    unique_id: 5108_REG_WS_DAY5_PRD1_ENABLED
+    slave: 1
+    address: 5108
+    #Flag indicatingif thisperiod is enabled.
+  - name: 5109_REG_WS_DAY5_PRD2_ENABLED
+    unique_id: 5109_REG_WS_DAY5_PRD2_ENABLED
+    slave: 1
+    address: 5109
+    #Flag indicatingif thisperiod is enabled.
+  - name: 5110_REG_WS_DAY6_PRD1_ENABLED
+    unique_id: 5110_REG_WS_DAY6_PRD1_ENABLED
+    slave: 1
+    address: 5110
+    #Flag indicatingif thisperiod is enabled.
+  - name: 5111_REG_WS_DAY6_PRD2_ENABLED
+    unique_id: 5111_REG_WS_DAY6_PRD2_ENABLED
+    slave: 1
+    address: 5111
+    #Flag indicatingif thisperiod is enabled.
+  - name: 5112_REG_WS_DAY7_PRD1_ENABLED
+    unique_id: 5112_REG_WS_DAY7_PRD1_ENABLED
+    slave: 1
+    address: 5112
+    #Flag indicatingif thisperiod is enabled.
+  - name: 5113_REG_WS_DAY7_PRD2_ENABLED
+    unique_id: 5113_REG_WS_DAY7_PRD2_ENABLED
+    slave: 1
+    address: 5113
+    #Flag indicatingif thisperiod is enabled.
+  - name: 6000_REG_TIME_YEAR
+    unique_id: 6000_REG_TIME_YEAR
+    slave: 1
+    address: 6000
+    #Current time
+  - name: 6001_REG_TIME_MONTH
+    unique_id: 6001_REG_TIME_MONTH
+    slave: 1
+    address: 6001
+    #Current time
+  - name: 6002_REG_TIME_DAY
+    unique_id: 6002_REG_TIME_DAY
+    slave: 1
+    address: 6002
+    #Current time
+  - name: 6003_REG_TIME_HOUR
+    unique_id: 6003_REG_TIME_HOUR
+    slave: 1
+    address: 6003
+    #Current time
+  - name: 6004_REG_TIME_MINUTE
+    unique_id: 6004_REG_TIME_MINUTE
+    slave: 1
+    address: 6004
+    #Current time
+  - name: 6005_REG_TIME_SECOND
+    unique_id: 6005_REG_TIME_SECOND
+    slave: 1
+    address: 6005
+    #Current time
+  - name: 6006_REG_TIME_AUTO_SUM_WIN
+    unique_id: 6006_REG_TIME_AUTO_SUM_WIN
+    slave: 1
+    address: 6006
+    #Flag indicatingif DSTis enabled.
+    #0: Daylightsavingtime notenabled
+    #1: Daylightsavingtime enabled
+  - name: 6007_REG_HOUR_FORMAT
+    unique_id: 6007_REG_HOUR_FORMAT
+    slave: 1
+    address: 6007
+    #Indicatiesthe presentationoftime in the
+    #HMI.24H/12H
+  - name: 6008_REG_DAY_OF_THE_WEEK
+    unique_id: 6008_REG_DAY_OF_THE_WEEK
+    slave: 1
+    address: 6008
+    #Monday(0)...Sunday(6)
+  - name: 6009_REG_DST_PERIOD_ACTIVE
+    unique_id: 6009_REG_DST_PERIOD_ACTIVE
+    slave: 1
+    address: 6009
+    #
+  - name: 6010_REG_TIME_RTC_SECONDS_L
+    unique_id: 6010_REG_TIME_RTC_SECONDS_L
+    slave: 1
+    address: 6010
+    #Nowtime in seconds.Lower 16bits.
+  - name: 6011_REG_TIME_RTC_SECONDS_H
+    unique_id: 6011_REG_TIME_RTC_SECONDS_H
+    slave: 1
+    address: 6011
+    #Nowtime in seconds.Higher 16 bits.
+  - name: 6020_REG_SYSTEM_START_UP_TIME_L
+    unique_id: 6020_REG_SYSTEM_START_UP_TIME_L
+    slave: 1
+    address: 6020
+    #
+  - name: 6021_REG_SYSTEM_START_UP_TIME_H
+    unique_id: 6021_REG_SYSTEM_START_UP_TIME_H
+    slave: 1
+    address: 6021
+    #
+  - name: 6100_REG_TIME_RTC
+    unique_id: 6100_REG_TIME_RTC
+    slave: 1
+    address: 6100
+    #RTCvalueinseconds,highest 16 bits
+  - name: 7000_REG_FILTER_PERIOD
+    unique_id: 7000_REG_FILTER_PERIOD
+    slave: 1
+    address: 7000
+    #Filterreplacement time inmonths
+  - name: 7001_REG_FILTER_REPLACEMENT_TIME_L
+    unique_id: 7001_REG_FILTER_REPLACEMENT_TIME_L
+    slave: 1
+    address: 7001
+    #Timestampof latest filter replcement, lower
+    #16bits
+  - name: 7002_REG_FILTER_REPLACEMENT_TIME_H
+    unique_id: 7002_REG_FILTER_REPLACEMENT_TIME_H
+    slave: 1
+    address: 7002
+    #Timestampof latest filter replcement,
+    #higher16 bits
+  - name: 7003_REG_FILTER_PERIOD_SET
+    unique_id: 7003_REG_FILTER_PERIOD_SET
+    slave: 1
+    address: 7003
+    #Indicatesthat the
+    #LastFilterReplacementTime shall be set
+    #Now.
+  - name: 7004_REG_FILTER_REMAINING_TIME_L
+    unique_id: 7004_REG_FILTER_REMAINING_TIME_L
+    slave: 1
+    address: 7004
+    #Remainingfilter time in seconds,lower 16
+    #bits.
+  - name: 7005_REG_FILTER_REMAINING_TIME_H
+    unique_id: 7005_REG_FILTER_REMAINING_TIME_H
+    slave: 1
+    address: 7005
+    #Remainingfilter time in seconds,higher 16
+    #bits.
+  - name: 12100_REG_SENSOR_FPT
+    unique_id: 12100_REG_SENSOR_FPT
+    slave: 1
+    address: 12100
+    #FrostProtectionTemperaturesensor value
+    #(WaterHeater)
+  - name: 12101_REG_SENSOR_OAT
+    unique_id: 12101_REG_SENSOR_OAT
+    slave: 1
+    address: 12101
+    #Outdoor AirTemperature sensor (standard)
+  - name: 12102_REG_SENSOR_SAT
+    unique_id: 12102_REG_SENSOR_SAT
+    slave: 1
+    address: 12102
+    #Supply AirTemperature sensor (standard)
+  - name: 12103_REG_SENSOR_RAT
+    unique_id: 12103_REG_SENSOR_RAT
+    slave: 1
+    address: 12103
+    #RoomAirTemperature sensor (accessory)
+  - name: 12104_REG_SENSOR_EAT
+    unique_id: 12104_REG_SENSOR_EAT
+    slave: 1
+    address: 12104
+    #Extract AirTemperature sensor (accessory)
+  - name: 12105_REG_SENSOR_ECT
+    unique_id: 12105_REG_SENSOR_ECT
+    slave: 1
+    address: 12105
+    #Extra Controller Temperaturesensor
+    #(accessory)
+  - name: 12106_REG_SENSOR_EFT
+    unique_id: 12106_REG_SENSOR_EFT
+    slave: 1
+    address: 12106
+    #Efficiency temperaturesensor (accessory)
+  - name: 12107_REG_SENSOR_OHT
+    unique_id: 12107_REG_SENSOR_OHT
+    slave: 1
+    address: 12107
+    #Over Heat Temperaturesensor (Electrical
+    #Heater)
+  - name: 12108_REG_SENSOR_RHS
+    unique_id: 12108_REG_SENSOR_RHS
+    slave: 1
+    address: 12108
+    #RelativeHumidity Sensor(Accessory)
+  - name: 12114_REG_SENSOR_CO2S
+    unique_id: 12114_REG_SENSOR_CO2S
+    slave: 1
+    address: 12114
+    #CO2 value (accessory)
+  - name: 12543_REG_SENSOR_PDM_EAT_VALUE
+    unique_id: 12543_REG_SENSOR_PDM_EAT_VALUE
+    slave: 1
+    address: 12543
+    #PDMEAT sensor value(standard)
+  - name: 12135_REG_SENSOR_RHS_PDM
+    unique_id: 12135_REG_SENSOR_RHS_PDM
+    slave: 1
+    address: 12135
+    #PDMRHS sensor value(standard)
+  - name: 12150_REG_SENSOR_CO2S_1
+    unique_id: 12150_REG_SENSOR_CO2S_1
+    slave: 1
+    address: 12150
+    #CO2 sensor value - UI1 (accessory)
+  - name: 12151_REG_SENSOR_CO2S_2
+    unique_id: 12151_REG_SENSOR_CO2S_2
+    slave: 1
+    address: 12151
+    #CO2 sensor value - UI2 (accessory)
+  - name: 12152_REG_SENSOR_CO2S_3
+    unique_id: 12152_REG_SENSOR_CO2S_3
+    slave: 1
+    address: 12152
+    #CO2 sensor value - UI3 (accessory)
+  - name: 12153_REG_SENSOR_CO2S_4
+    unique_id: 12153_REG_SENSOR_CO2S_4
+    slave: 1
+    address: 12153
+    #CO2 sensor value - UI4 (accessory)
+  - name: 12154_REG_SENSOR_CO2S_5
+    unique_id: 12154_REG_SENSOR_CO2S_5
+    slave: 1
+    address: 12154
+    #CO2 sensor value - UI5 (accessory)
+  - name: 12155_REG_SENSOR_CO2S_6
+    unique_id: 12155_REG_SENSOR_CO2S_6
+    slave: 1
+    address: 12155
+    #CO2 sensor value - UI6 (accessory)
+  - name: 12160_REG_SENSOR_RHS_1
+    unique_id: 12160_REG_SENSOR_RHS_1
+    slave: 1
+    address: 12160
+    #RHsensor value - UI1 (accessory)
+  - name: 12161_REG_SENSOR_RHS_2
+    unique_id: 12161_REG_SENSOR_RHS_2
+    slave: 1
+    address: 12161
+    #RHsensor value - UI2 (accessory)
+  - name: 12162_REG_SENSOR_RHS_3
+    unique_id: 12162_REG_SENSOR_RHS_3
+    slave: 1
+    address: 12162
+    #RHsensor value - UI3 (accessory)
+  - name: 12163_REG_SENSOR_RHS_4
+    unique_id: 12163_REG_SENSOR_RHS_4
+    slave: 1
+    address: 12163
+    #RHsensor value - UI4 (accessory)
+  - name: 12164_REG_SENSOR_RHS_5
+    unique_id: 12164_REG_SENSOR_RHS_5
+    slave: 1
+    address: 12164
+    #RHsensor value - UI5 (accessory)
+  - name: 12165_REG_SENSOR_RHS_6
+    unique_id: 12165_REG_SENSOR_RHS_6
+    slave: 1
+    address: 12165
+    #RHsensor value - UI6 (accessory)
+  - name: 12010_REG_INPUT_ANALOG_UI_1
+    unique_id: 12010_REG_INPUT_ANALOG_UI_1
+    slave: 1
+    address: 12010
+    #mV
+  - name: 12011_REG_INPUT_ANALOG_UI_2
+    unique_id: 12011_REG_INPUT_ANALOG_UI_2
+    slave: 1
+    address: 12011
+    #mV
+  - name: 12012_REG_INPUT_ANALOG_UI_3
+    unique_id: 12012_REG_INPUT_ANALOG_UI_3
+    slave: 1
+    address: 12012
+    #mV
+  - name: 12013_REG_INPUT_ANALOG_UI_4
+    unique_id: 12013_REG_INPUT_ANALOG_UI_4
+    slave: 1
+    address: 12013
+    #mV
+  - name: 12014_REG_INPUT_ANALOG_UI_5
+    unique_id: 12014_REG_INPUT_ANALOG_UI_5
+    slave: 1
+    address: 12014
+    #mV
+  - name: 12015_REG_INPUT_ANALOG_UI_6
+    unique_id: 12015_REG_INPUT_ANALOG_UI_6
+    slave: 1
+    address: 12015
+    #mV
+  - name: 12020_REG_INPUT_DIGITAL_UI_1
+    unique_id: 12020_REG_INPUT_DIGITAL_UI_1
+    slave: 1
+    address: 12020
+    #State ofUI1
+  - name: 12021_REG_INPUT_DIGITAL_UI_2
+    unique_id: 12021_REG_INPUT_DIGITAL_UI_2
+    slave: 1
+    address: 12021
+    #State ofUI2
+  - name: 12022_REG_INPUT_DIGITAL_UI_3
+    unique_id: 12022_REG_INPUT_DIGITAL_UI_3
+    slave: 1
+    address: 12022
+    #State ofUI3
+  - name: 12023_REG_INPUT_DIGITAL_UI_4
+    unique_id: 12023_REG_INPUT_DIGITAL_UI_4
+    slave: 1
+    address: 12023
+    #State ofUI4
+  - name: 12024_REG_INPUT_DIGITAL_UI_5
+    unique_id: 12024_REG_INPUT_DIGITAL_UI_5
+    slave: 1
+    address: 12024
+    #State ofUI5
+  - name: 12025_REG_INPUT_DIGITAL_UI_6
+    unique_id: 12025_REG_INPUT_DIGITAL_UI_6
+    slave: 1
+    address: 12025
+    #State ofUI6
+  - name: 12111_REG_SENSOR_RGS
+    unique_id: 12111_REG_SENSOR_RGS
+    slave: 1
+    address: 12111
+    #RotatingguardSensorinput
+  - name: 12307_REG_SENSOR_DI_EXTERNAL_STOP
+    unique_id: 12307_REG_SENSOR_DI_EXTERNAL_STOP
+    slave: 1
+    address: 12307
+    #External Stopinput value
+  - name: 12308_REG_SENSOR_DI_LOAD_DETECTED
+    unique_id: 12308_REG_SENSOR_DI_LOAD_DETECTED
+    slave: 1
+    address: 12308
+    #LoadDetectedinput value
+  - name: 12310_REG_SENSOR_DI_FIRE_ALARM
+    unique_id: 12310_REG_SENSOR_DI_FIRE_ALARM
+    slave: 1
+    address: 12310
+    #FireAlarminput value
+  - name: 12311_REG_SENSOR_DI_CHANGE_OVER_FEEDBACK
+    unique_id: 12311_REG_SENSOR_DI_CHANGE_OVER_FEEDBACK
+    slave: 1
+    address: 12311
+    #Change over feedback value
+  - name: 11400_REG_DI_CONNECTION_1
+    unique_id: 11400_REG_DI_CONNECTION_1
+    slave: 1
+    address: 11400
+    #Indicateswhat kind ofDI functionality is
+    #connected to DI1. 0: None /Away/BYP/
+    #VacuumCleaner/ CookerHood/ Crowded/
+    #EMT/External Stop/ ExtraController Alarm/
+    #Fireplace/ Holiday/Refresh/RGS/ Change
+    #Over Feedback/ 14: FireAlarm/
+    #Configurable DI1 / ConfigurableDI2 /
+    #Configurable DI3 / 18: PressureGuard
+  - name: 11401_REG_DI_CONNECTION_2
+    unique_id: 11401_REG_DI_CONNECTION_2
+    slave: 1
+    address: 11401
+    #Indicateswhat kind ofDI functionality is
+    #connected to DI1. 0: None /Away/BYP/
+    #VacuumCleaner/ CookerHood/ Crowded/
+    #EMT/External Stop/ ExtraController Alarm/
+    #Fireplace/ Holiday/Refresh/RGS/ Change
+    #Over Feedback/ 14: FireAlarm/
+    #Configurable DI1 / ConfigurableDI2 /
+    #Configurable DI3 / 18: PressureGuard
+  - name: 11420_REG_DI_CFG_POLARITY_1
+    unique_id: 11420_REG_DI_CFG_POLARITY_1
+    slave: 1
+    address: 11420
+    #PolarityofDI1.
+    #0: NO
+    #1: NC
+  - name: 11421_REG_DI_CFG_POLARITY_2
+    unique_id: 11421_REG_DI_CFG_POLARITY_2
+    slave: 1
+    address: 11421
+    #PolarityofDI1.
+    #0: NO
+    #1: NC
+  - name: 12030_REG_INPUT_DIGITAL_DI_1
+    unique_id: 12030_REG_INPUT_DIGITAL_DI_1
+    slave: 1
+    address: 12030
+    #Boolean
+  - name: 12031_REG_INPUT_DIGITAL_DI_2
+    unique_id: 12031_REG_INPUT_DIGITAL_DI_2
+    slave: 1
+    address: 12031
+    #Boolean
+  - name: 12111_REG_SENSOR_RGS
+    unique_id: 12111_REG_SENSOR_RGS
+    slave: 1
+    address: 12111
+    #RotatingguardSensorinput
+  - name: 13300_REG_DO1_AFTER_MUX
+    unique_id: 13300_REG_DO1_AFTER_MUX
+    slave: 1
+    address: 13300
+    #Digitaloutputafter multiplexer
+  - name: 13301_REG_DO2_AFTER_MUX
+    unique_id: 13301_REG_DO2_AFTER_MUX
+    slave: 1
+    address: 13301
+    #Digitaloutputafter multiplexer
+  - name: 13302_REG_DO3_AFTER_MUX
+    unique_id: 13302_REG_DO3_AFTER_MUX
+    slave: 1
+    address: 13302
+    #Digitaloutputafter multiplexer
+  - name: 13303_REG_DO4_AFTER_MUX
+    unique_id: 13303_REG_DO4_AFTER_MUX
+    slave: 1
+    address: 13303
+    #Digitaloutputafter multiplexer
+  - name: 13310_REG_AO1_AFTER_MUX
+    unique_id: 13310_REG_AO1_AFTER_MUX
+    slave: 1
+    address: 13310
+    #Analogoutput after multiplexer
+  - name: 13311_REG_AO2_AFTER_MUX
+    unique_id: 13311_REG_AO2_AFTER_MUX
+    slave: 1
+    address: 13311
+    #Analogoutput after multiplexer
+  - name: 13312_REG_AO3_AFTER_MUX
+    unique_id: 13312_REG_AO3_AFTER_MUX
+    slave: 1
+    address: 13312
+    #Analogoutput after multiplexer
+  - name: 13313_REG_AO4_AFTER_MUX
+    unique_id: 13313_REG_AO4_AFTER_MUX
+    slave: 1
+    address: 13313
+    #Analogoutput after multiplexer
+  - name: 13314_REG_AO5_AFTER_MUX
+    unique_id: 13314_REG_AO5_AFTER_MUX
+    slave: 1
+    address: 13314
+    #Analogoutput after multiplexer
+  - name: 14003_REG_OUTPUT_OUTDOOR_EXTRACT_DAMPER
+    unique_id: 14003_REG_OUTPUT_OUTDOOR_EXTRACT_DAMPER
+    slave: 1
+    address: 14003
+    #Indicatesif Outdoor/Exhaust airdamper
+    #signalis On/Off
+  - name: 14102_REG_OUTPUT_Y2_ANALOG
+    unique_id: 14102_REG_OUTPUT_Y2_ANALOG
+    slave: 1
+    address: 14102
+    #Heat Exchanger AO state.
+  - name: 14103_REG_OUTPUT_Y2_DIGITAL
+    unique_id: 14103_REG_OUTPUT_Y2_DIGITAL
+    slave: 1
+    address: 14103
+    #Heat Exchanger DO state.0:Output not
+    #active1:Outputactive
+  - name: 14350_REG_OUTPUT_AO1
+    unique_id: 14350_REG_OUTPUT_AO1
+    slave: 1
+    address: 14350
+    #Voltagesignal fromAO1
+  - name: 14351_REG_OUTPUT_AO2
+    unique_id: 14351_REG_OUTPUT_AO2
+    slave: 1
+    address: 14351
+    #Voltagesignal fromAO2
+  - name: 14352_REG_OUTPUT_AO3
+    unique_id: 14352_REG_OUTPUT_AO3
+    slave: 1
+    address: 14352
+    #Voltagesignal fromAO3
+  - name: 14353_REG_OUTPUT_AO4
+    unique_id: 14353_REG_OUTPUT_AO4
+    slave: 1
+    address: 14353
+    #Voltagesignal fromAO4
+  - name: 14354_REG_OUTPUT_AO5
+    unique_id: 14354_REG_OUTPUT_AO5
+    slave: 1
+    address: 14354
+    #Voltagesignal fromAO5
+  - name: 14360_REG_OUTPUT_DO1
+    unique_id: 14360_REG_OUTPUT_DO1
+    slave: 1
+    address: 14360
+    #State ofDO1
+  - name: 14361_REG_OUTPUT_DO2
+    unique_id: 14361_REG_OUTPUT_DO2
+    slave: 1
+    address: 14361
+    #State ofDO2
+  - name: 14362_REG_OUTPUT_DO3
+    unique_id: 14362_REG_OUTPUT_DO3
+    slave: 1
+    address: 14362
+    #State ofDO3
+  - name: 14363_REG_OUTPUT_DO4
+    unique_id: 14363_REG_OUTPUT_DO4
+    slave: 1
+    address: 14363
+    #State ofDO4
+  - name: 7006_REG_FILTER_ALARM_WAS_DETECTED
+    unique_id: 7006_REG_FILTER_ALARM_WAS_DETECTED
+    slave: 1
+    address: 7006
+    #Indicatesif thefilter warning alarm was
+    #generated.
+  - name: 14002_REG_OUTPUT_ALARM
+    unique_id: 14002_REG_OUTPUT_ALARM
+    slave: 1
+    address: 14002
+    #SumAlarm DO
+    #0: Outputnot active
+    #1: Outputactive
+  - name: 15001_REG_ALARM_SAF_CTRL_ALARM
+    unique_id: 15001_REG_ALARM_SAF_CTRL_ALARM
+    slave: 1
+    address: 15001
+    #Alarmactive/inactive.
+    #0: Inactive
+    #1: Active
+    #2: Waiting
+    #3: ClearedErrorActive
+  - name: 15002_REG_ALARM_SAF_CTRL_CLEAR_ALARM
+    unique_id: 15002_REG_ALARM_SAF_CTRL_CLEAR_ALARM
+    slave: 1
+    address: 15002
+    #Signalto clearthe alarm
+  - name: 15008_REG_ALARM_EAF_CTRL_ALARM
+    unique_id: 15008_REG_ALARM_EAF_CTRL_ALARM
+    slave: 1
+    address: 15008
+    #Alarmactive/inactive.
+    #0: Inactive
+    #1: Active
+    #2: Waiting
+    #3: ClearedErrorActive
+  - name: 15009_REG_ALARM_EAF_CTRL_CLEAR_ALARM
+    unique_id: 15009_REG_ALARM_EAF_CTRL_CLEAR_ALARM
+    slave: 1
+    address: 15009
+    #Signalto clearthe alarm
+  - name: 15015_REG_ALARM_FROST_PROT_ALARM
+    unique_id: 15015_REG_ALARM_FROST_PROT_ALARM
+    slave: 1
+    address: 15015
+    #Alarmactive/inactive.
+    #: Inactive
+    #: Active
+    #: Waiting
+    #: ClearedErrorActive
+  - name: 15016_REG_ALARM_FROST_PROT_CLEAR_ALARM
+    unique_id: 15016_REG_ALARM_FROST_PROT_CLEAR_ALARM
+    slave: 1
+    address: 15016
+    #Signalto clearthe alarm
+  - name: 15022_REG_ALARM_DEFROSTING_ALARM
+    unique_id: 15022_REG_ALARM_DEFROSTING_ALARM
+    slave: 1
+    address: 15022
+    #Alarmactive/inactive.
+    #0: Inactive
+    #1: Active
+    #2: Waiting
+    #3: ClearedErrorActive
+  - name: 15023_REG_ALARM_DEFROSTING_CLEAR_ALARM
+    unique_id: 15023_REG_ALARM_DEFROSTING_CLEAR_ALARM
+    slave: 1
+    address: 15023
+    #Signalto clearthe alarm
+  - name: 15029_REG_ALARM_SAF_RPM_ALARM
+    unique_id: 15029_REG_ALARM_SAF_RPM_ALARM
+    slave: 1
+    address: 15029
+    #Alarmactive/inactive.
+    #0: Inactive
+    #1: Active
+    #2: Waiting
+    #3: ClearedErrorActive
+  - name: 15030_REG_ALARM_SAF_RPM_CLEAR_ALARM
+    unique_id: 15030_REG_ALARM_SAF_RPM_CLEAR_ALARM
+    slave: 1
+    address: 15030
+    #Signalto clearthe alarm
+  - name: 15036_REG_ALARM_EAF_RPM_ALARM
+    unique_id: 15036_REG_ALARM_EAF_RPM_ALARM
+    slave: 1
+    address: 15036
+    #Alarmactive/inactive.
+    #0: Inactive
+    #1: Active
+    #2: Waiting
+    #3: ClearedErrorActive
+  - name: 15037_REG_ALARM_EAF_RPM_CLEAR_ALARM
+    unique_id: 15037_REG_ALARM_EAF_RPM_CLEAR_ALARM
+    slave: 1
+    address: 15037
+    #Signalto clearthe alarm
+  - name: 15057_REG_ALARM_FPT_ALARM
+    unique_id: 15057_REG_ALARM_FPT_ALARM
+    slave: 1
+    address: 15057
+    #Alarmactive/inactive.
+    #0: Inactive
+    #1: Active
+    #2: Waiting
+    #3: ClearedErrorActive
+  - name: 15058_REG_ALARM_FPT_CLEAR_ALARM
+    unique_id: 15058_REG_ALARM_FPT_CLEAR_ALARM
+    slave: 1
+    address: 15058
+    #Signalto clearthe alarm
+  - name: 15064_REG_ALARM_OAT_ALARM
+    unique_id: 15064_REG_ALARM_OAT_ALARM
+    slave: 1
+    address: 15064
+    #Alarmactive/inactive.
+    #0: Inactive
+    #1: Active
+    #2: Waiting
+    #3: ClearedErrorActive
+  - name: 15065_REG_ALARM_OAT_CLEAR_ALARM
+    unique_id: 15065_REG_ALARM_OAT_CLEAR_ALARM
+    slave: 1
+    address: 15065
+    #Signalto clearthe alarm
+  - name: 15071_REG_ALARM_SAT_ALARM
+    unique_id: 15071_REG_ALARM_SAT_ALARM
+    slave: 1
+    address: 15071
+    #Alarmactive/inactive.
+    #0: Inactive
+    #1: Active
+    #2: Waiting
+    #3: ClearedErrorActive
+  - name: 15072_REG_ALARM_SAT_CLEAR_ALARM
+    unique_id: 15072_REG_ALARM_SAT_CLEAR_ALARM
+    slave: 1
+    address: 15072
+    #Signalto clearthe alarm
+  - name: 15078_REG_ALARM_RAT_ALARM
+    unique_id: 15078_REG_ALARM_RAT_ALARM
+    slave: 1
+    address: 15078
+    #Alarmactive/inactive.
+    #0: Inactive
+    #1: Active
+    #2: Waiting
+    #3: ClearedErrorActive
+  - name: 15079_REG_ALARM_RAT_CLEAR_ALARM
+    unique_id: 15079_REG_ALARM_RAT_CLEAR_ALARM
+    slave: 1
+    address: 15079
+    #Signalto clearthe alarm
+  - name: 15085_REG_ALARM_EAT_ALARM
+    unique_id: 15085_REG_ALARM_EAT_ALARM
+    slave: 1
+    address: 15085
+    #Alarmactive/inactive.
+    #0: Inactive
+    #1: Active
+    #2: Waiting
+    #3: ClearedErrorActive
+  - name: 15086_REG_ALARM_EAT_CLEAR_ALARM
+    unique_id: 15086_REG_ALARM_EAT_CLEAR_ALARM
+    slave: 1
+    address: 15086
+    #Signalto clearthe alarm
+  - name: 15092_REG_ALARM_ECT_ALARM
+    unique_id: 15092_REG_ALARM_ECT_ALARM
+    slave: 1
+    address: 15092
+    #Alarmactive/inactive.
+    #0: Inactive
+    #1: Active
+    #2: Waiting
+    #3: ClearedErrorActive
+  - name: 15093_REG_ALARM_ECT_CLEAR_ALARM
+    unique_id: 15093_REG_ALARM_ECT_CLEAR_ALARM
+    slave: 1
+    address: 15093
+    #Signalto clearthe alarm
+  - name: 15099_REG_ALARM_EFT_ALARM
+    unique_id: 15099_REG_ALARM_EFT_ALARM
+    slave: 1
+    address: 15099
+    #Alarmactive/inactive.
+    #0: Inactive
+    #1: Active
+    #2: Waiting
+    #3: ClearedErrorActive
+  - name: 15100_REG_ALARM_EFT_CLEAR_ALARM
+    unique_id: 15100_REG_ALARM_EFT_CLEAR_ALARM
+    slave: 1
+    address: 15100
+    #Signalto clearthe alarm
+  - name: 15106_REG_ALARM_OHT_ALARM
+    unique_id: 15106_REG_ALARM_OHT_ALARM
+    slave: 1
+    address: 15106
+    #Alarmactive/inactive.
+    #0: Inactive
+    #1: Active
+    #2: Waiting
+    #3: ClearedErrorActive
+  - name: 15107_REG_ALARM_OHT_CLEAR_ALARM
+    unique_id: 15107_REG_ALARM_OHT_CLEAR_ALARM
+    slave: 1
+    address: 15107
+    #Signalto clearthe alarm
+  - name: 15113_REG_ALARM_EMT_ALARM
+    unique_id: 15113_REG_ALARM_EMT_ALARM
+    slave: 1
+    address: 15113
+    #Alarmactive/inactive.
+    #0: Inactive
+    #1: Active
+    #2: Waiting
+    #3: ClearedErrorActive
+  - name: 15114_REG_ALARM_EMT_CLEAR_ALARM
+    unique_id: 15114_REG_ALARM_EMT_CLEAR_ALARM
+    slave: 1
+    address: 15114
+    #Signalto clearthe alarm
+  - name: 15120_REG_ALARM_RGS_ALARM
+    unique_id: 15120_REG_ALARM_RGS_ALARM
+    slave: 1
+    address: 15120
+    #Alarmactive/inactive.
+    #0: Inactive
+    #1: Active
+    #2: Waiting
+    #3: ClearedErrorActive
+  - name: 15121_REG_ALARM_RGS_CLEAR_ALARM
+    unique_id: 15121_REG_ALARM_RGS_CLEAR_ALARM
+    slave: 1
+    address: 15121
+    #Signalto clearthe alarm
+  - name: 15127_REG_ALARM_BYS_ALARM
+    unique_id: 15127_REG_ALARM_BYS_ALARM
+    slave: 1
+    address: 15127
+    #Alarmactive/inactive.
+    #0: Inactive
+    #1: Active
+    #2: Waiting
+    #3: ClearedErrorActive
+  - name: 15128_REG_ALARM_BYS_CLEAR_ALARM
+    unique_id: 15128_REG_ALARM_BYS_CLEAR_ALARM
+    slave: 1
+    address: 15128
+    #Signalto clearthe alarm
+  - name: 15134_REG_ALARM_SECONDARY_AIR_ALARM
+    unique_id: 15134_REG_ALARM_SECONDARY_AIR_ALARM
+    slave: 1
+    address: 15134
+    #Alarmactive/inactive.
+    #0: Inactive
+    #1: Active
+    #2: Waiting
+    #3: ClearedErrorActive
+  - name: 15135_REG_ALARM_SECONDARY_AIR_CLEAR_ALARM
+    unique_id: 15135_REG_ALARM_SECONDARY_AIR_CLEAR_ALARM
+    slave: 1
+    address: 15135
+    #Signalto clearthe alarm
+  - name: 15141_REG_ALARM_FILTER_ALARM
+    unique_id: 15141_REG_ALARM_FILTER_ALARM
+    slave: 1
+    address: 15141
+    #Alarmactive/inactive.
+    #0: Inactive
+    #1: Active
+    #2: Waiting
+    #3: ClearedErrorActive
+  - name: 15142_REG_ALARM_FILTER_CLEAR_ALARM
+    unique_id: 15142_REG_ALARM_FILTER_CLEAR_ALARM
+    slave: 1
+    address: 15142
+    #Signalto clearthe alarm
+  - name: 15148_REG_ALARM_EXTRA_CONTROLLER_ALARM
+    unique_id: 15148_REG_ALARM_EXTRA_CONTROLLER_ALARM
+    slave: 1
+    address: 15148
+    #Alarmactive/inactive.
+    #0: Inactive
+    #1: Active
+    #2: Waiting
+    #3: ClearedErrorActive
+  - name: 15149_REG_ALARM_EXTRA_CONTROLLER_CLEAR_ALARM
+    unique_id: 15149_REG_ALARM_EXTRA_CONTROLLER_CLEAR_ALARM
+    slave: 1
+    address: 15149
+    #Signalto clearthe alarm
+  - name: 15155_REG_ALARM_EXTERNAL_STOP_ALARM
+    unique_id: 15155_REG_ALARM_EXTERNAL_STOP_ALARM
+    slave: 1
+    address: 15155
+    #Alarmactive/inactive.
+    #0: Inactive
+    #1: Active
+    #2: Waiting
+    #3: ClearedErrorActive
+  - name: 15156_REG_ALARM_EXTERNAL_STOP_CLEAR_ALARM
+    unique_id: 15156_REG_ALARM_EXTERNAL_STOP_CLEAR_ALARM
+    slave: 1
+    address: 15156
+    #Signalto clearthe alarm
+  - name: 15162_REG_ALARM_RH_ALARM
+    unique_id: 15162_REG_ALARM_RH_ALARM
+    slave: 1
+    address: 15162
+    #Alarmactive/inactive.
+    #0: Inactive
+    #1: Active
+    #2: Waiting
+    #3: ClearedErrorActive
+  - name: 15163_REG_ALARM_RH_CLEAR_ALARM
+    unique_id: 15163_REG_ALARM_RH_CLEAR_ALARM
+    slave: 1
+    address: 15163
+    #Signalto clearthe alarm
+  - name: 15169_REG_ALARM_CO2_ALARM
+    unique_id: 15169_REG_ALARM_CO2_ALARM
+    slave: 1
+    address: 15169
+    #Alarmactive/inactive.
+    #0: Inactive
+    #1: Active
+    #2: Waiting
+    #3: ClearedErrorActive
+  - name: 15170_REG_ALARM_CO2_CLEAR_ALARM
+    unique_id: 15170_REG_ALARM_CO2_CLEAR_ALARM
+    slave: 1
+    address: 15170
+    #Signalto clearthe alarm
+  - name: 15176_REG_ALARM_LOW_SAT_ALARM
+    unique_id: 15176_REG_ALARM_LOW_SAT_ALARM
+    slave: 1
+    address: 15176
+    #Alarmactive/inactive.
+    #0: Inactive
+    #1: Active
+    #2: Waiting
+    #3: ClearedErrorActive
+  - name: 15177_REG_ALARM_LOW_SAT_CLEAR_ALARM
+    unique_id: 15177_REG_ALARM_LOW_SAT_CLEAR_ALARM
+    slave: 1
+    address: 15177
+    #Signalto clearthe alarm
+  - name: 15183_REG_ALARM_BYF_ALARM
+    unique_id: 15183_REG_ALARM_BYF_ALARM
+    slave: 1
+    address: 15183
+    #Alarmactive/inactive
+    #0: Inactive
+    #1: Active
+    #2: Waiting
+    #3: ClearedErrorActive
+  - name: 15184_REG_ALARM_BYF_CLEAR_ALARM
+    unique_id: 15184_REG_ALARM_BYF_CLEAR_ALARM
+    slave: 1
+    address: 15184
+    #Signalto clearthe alarm
+  - name: 15501_REG_ALARM_MANUAL_OVERRIDE_OUTPUTS_ALARM
+    unique_id: 15501_REG_ALARM_MANUAL_OVERRIDE_OUTPUTS_ALARM
+    slave: 1
+    address: 15501
+    #Alarmactive/inactive.
+    #0: Inactive
+    #1: Active
+    #2: Waiting
+    #3: ClearedErrorActive
+  - name: 15502_REG_ALARM_MANUAL_OVERRIDE_OUTPUTS_CLEAR_ALARM
+    unique_id: 15502_REG_ALARM_MANUAL_OVERRIDE_OUTPUTS_CLEAR_ALARM
+    slave: 1
+    address: 15502
+    #Signalto clearthe alarm
+  - name: 15508_REG_ALARM_PDM_RHS_ALARM
+    unique_id: 15508_REG_ALARM_PDM_RHS_ALARM
+    slave: 1
+    address: 15508
+    #Alarmactive/inactive.
+    #0: Inactive
+    #1: Active
+    #2: Waiting
+    #3: ClearedErrorActive
+  - name: 15509_REG_ALARM_PDM_RHS_CLEAR_ALARM
+    unique_id: 15509_REG_ALARM_PDM_RHS_CLEAR_ALARM
+    slave: 1
+    address: 15509
+    #Signalto clearthe alarm
+  - name: 15515_REG_ALARM_PDM_EAT_ALARM
+    unique_id: 15515_REG_ALARM_PDM_EAT_ALARM
+    slave: 1
+    address: 15515
+    #Alarmactive/inactive.
+    #0: Inactive
+    #1: Active
+    #2: Waiting
+    #3: ClearedErrorActive
+  - name: 15516_REG_ALARM_PDM_EAT_CLEAR_ALARM
+    unique_id: 15516_REG_ALARM_PDM_EAT_CLEAR_ALARM
+    slave: 1
+    address: 15516
+    #Signalto clearthe alarm
+  - name: 15522_REG_ALARM_MANUAL_FAN_STOP_ALARM
+    unique_id: 15522_REG_ALARM_MANUAL_FAN_STOP_ALARM
+    slave: 1
+    address: 15522
+    #Alarmactive/inactive.
+    #0: Inactive
+    #1: Active
+    #2: Waiting
+    #3: ClearedErrorActive
+  - name: 15523_REG_ALARM_MANUAL_FAN_STOP_CLEAR_ALARM
+    unique_id: 15523_REG_ALARM_MANUAL_FAN_STOP_CLEAR_ALARM
+    slave: 1
+    address: 15523
+    #Signalto clearthe alarm
+  - name: 15529_REG_ALARM_OVERHEAT_TEMPERATURE_ALARM
+    unique_id: 15529_REG_ALARM_OVERHEAT_TEMPERATURE_ALARM
+    slave: 1
+    address: 15529
+    #Alarmactive/inactive.
+    #0: Inactive
+    #1: Active
+    #2: Waiting
+    #3: ClearedErrorActive
+  - name: 15530_REG_ALARM_OVERHEAT_TEMPERATURE_CLEAR_ALARM
+    unique_id: 15530_REG_ALARM_OVERHEAT_TEMPERATURE_CLEAR_ALARM
+    slave: 1
+    address: 15530
+    #Signalto clearthe alarm
+  - name: 15536_REG_ALARM_FIRE_ALARM_ALARM
+    unique_id: 15536_REG_ALARM_FIRE_ALARM_ALARM
+    slave: 1
+    address: 15536
+    #Alarmactive/inactive.
+    #0: Inactive
+    #1: Active
+    #2: Waiting
+    #3: ClearedErrorActive
+  - name: 15537_REG_ALARM_FIRE_ALARM_CLEAR_ALARM
+    unique_id: 15537_REG_ALARM_FIRE_ALARM_CLEAR_ALARM
+    slave: 1
+    address: 15537
+    #Signalto clearthe alarm
+  - name: 15543_REG_ALARM_FILTER_WARNING_ALARM
+    unique_id: 15543_REG_ALARM_FILTER_WARNING_ALARM
+    slave: 1
+    address: 15543
+    #Alarmactive/inactive.
+    #0: Inactive
+    #1: Active
+    #2: Waiting
+    #3: ClearedErrorActive
+  - name: 15544_REG_ALARM_FILTER_WARNING_CLEAR_ALARM
+    unique_id: 15544_REG_ALARM_FILTER_WARNING_CLEAR_ALARM
+    slave: 1
+    address: 15544
+    #Signalto clearthe alarm
+  - name: 15548_REG_ALARM_FILTER_WARNING_ALARM_ERROR_DURATION_COUNTER
+    unique_id: 15548_REG_ALARM_FILTER_WARNING_ALARM_ERROR_DURATION_COUNTER
+    slave: 1
+    address: 15548
+    #Counter fordelay
+  - name: 15900_REG_ALARM_TYPE_A
+    unique_id: 15900_REG_ALARM_TYPE_A
+    slave: 1
+    address: 15900
+    #Indicatesif an alarm Type A is active
+  - name: 15901_REG_ALARM_TYPE_B
+    unique_id: 15901_REG_ALARM_TYPE_B
+    slave: 1
+    address: 15901
+    #Indicatesif an alarm Type B is active
+  - name: 15902_REG_ALARM_TYPE_C
+    unique_id: 15902_REG_ALARM_TYPE_C
+    slave: 1
+    address: 15902
+    #Indicatesif an alarm Type C is active
+  - name: 16000_REG_PASSWD_ADMIN
+    unique_id: 16000_REG_PASSWD_ADMIN
+    slave: 1
+    address: 16000
+    #Administratorpassword.
+    #Bit12-15: digit 1
+    #Bit8-11: digit 2
+    #Bit4-7: digit 3
+    #Bit0-3: digit 4
+  - name: 16001_REG_LOCKED_USER
+    unique_id: 16001_REG_LOCKED_USER
+    slave: 1
+    address: 16001
+    #Indicatesif theUser levelis locked.
+    #0: Usermenu locked
+    #1: Usermenu notlocked
+  - name: 16002_REG_LOCKED_FILTER
+    unique_id: 16002_REG_LOCKED_FILTER
+    slave: 1
+    address: 16002
+    #Indicatesif theFilter menu is locked.
+    #0: menulocked
+    #1: menunot locked
+  - name: 16003_REG_LOCKED_WEEK_SCHEDULE
+    unique_id: 16003_REG_LOCKED_WEEK_SCHEDULE
+    slave: 1
+    address: 16003
+    #Indicatesif theWeek schedule menu is
+    #locked.
+    #0: menulocked
+    #1: menunot locked
+  - name: 16050_REG_PASSWD_USER_LEVEL_REQUIRED
+    unique_id: 16050_REG_PASSWD_USER_LEVEL_REQUIRED
+    slave: 1
+    address: 16050
+    #Homescreenlock
+  - name: 16051_REG_PASSWD_FILTER_REQUIRED
+    unique_id: 16051_REG_PASSWD_FILTER_REQUIRED
+    slave: 1
+    address: 16051
+    #FilterChange menulock
+  - name: 16052_REG_PASSWD_WEEK_SCHEDULE_REQUIRED
+    unique_id: 16052_REG_PASSWD_WEEK_SCHEDULE_REQUIRED
+    slave: 1
+    address: 16052
+    #Week schedule menulock
+  - name: 16060_REG_PASSWD_PC_SETTINGS
+    unique_id: 16060_REG_PASSWD_PC_SETTINGS
+    slave: 1
+    address: 16060
+    #
+  - name: 16061_REG_PASSWD_PC_UNLOCKED
+    unique_id: 16061_REG_PASSWD_PC_UNLOCKED
+    slave: 1
+    address: 16061
+    #
+  - name: 16100_REG_SUW_REQUIRED
+    unique_id: 16100_REG_SUW_REQUIRED
+    slave: 1
+    address: 16100
+    #Indicatesif thestart-upwizardshall be
+    #activated.
+  - name: 17000_REG_COMM_MODBUS_ADDRESS
+    unique_id: 17000_REG_COMM_MODBUS_ADDRESS
+    slave: 1
+    address: 17000
+    #Modbus addressoftheMB.
+    #Only relevantifthe MBis a modbus slave.
+  - name: 17001_REG_COMM_MODBUS_BAUD_RATE
+    unique_id: 17001_REG_COMM_MODBUS_BAUD_RATE
+    slave: 1
+    address: 17001
+    #Baudrateof themodbus connection
+    #0=1200
+    #1=2400
+    #2=4800
+    #3=9600
+    #4=14400
+    #5=19200
+    #6=28800
+    #7=38400
+    #8=57600
+    #9=76800
+    #10=115200
+  - name: 17002_REG_COMM_MODBUS_PARITY
+    unique_id: 17002_REG_COMM_MODBUS_PARITY
+    slave: 1
+    address: 17002
+    #Paritysetting forthe modbus connection.
+    #0: None
+    #1: Even
+    #2: Odd
+  - name: 30100_REG_FACTORY_RESET
+    unique_id: 30100_REG_FACTORY_RESET
+    slave: 1
+    address: 30100
+    #Activatessettingofthe parametersto their
+    #defaultvalues.
+    #Onlyactivated bywriting 3228 to this
+    #register.
+  - name: 30102_REG_SET_USER_SAFE_CONFIG
+    unique_id: 30102_REG_SET_USER_SAFE_CONFIG
+    slave: 1
+    address: 30102
+    #
+  - name: 30103_REG_ACTIVATE_USER_SAFE_CONFIG
+    unique_id: 30103_REG_ACTIVATE_USER_SAFE_CONFIG
+    slave: 1
+    address: 30103
+    #
+  - name: 30104_REG_USER_SAFE_CONFIG_VALID
+    unique_id: 30104_REG_USER_SAFE_CONFIG_VALID
+    slave: 1
+    address: 30104
+    #
+  - name: 30105_REG_SAFE_CONFIG_VALID
+    unique_id: 30105_REG_SAFE_CONFIG_VALID
+    slave: 1
+    address: 30105
+    #

@@ -47,3 +47,4 @@ www/community
 
 # Temporary ignores
 .old_config
+.shopping_list.json

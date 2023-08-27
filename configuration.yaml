@@ -11,17 +11,83 @@ scene: !include scenes.yaml
 # MODBUS
 
 modbus:
-- name: VTR300
-  close_comm_on_error: true
-  delay: 1
-  message_wait_milliseconds: 10
-  retries: 5
-  timeout: 1
-  type: serial
-  baudrate: 115200
-  bytesize: 8
-  method: rtu
-  parity: N
-  port: /dev/serial/by-id/usb-1a86_USB_Single_Serial_5434023441-if00
-  stopbits: 1
-  sensors: !include sensors-modbus.yaml
+- type: tcp
+  host: 192.168.1.8
+  port: 502
+  name: "VTR300"
+  sensors: !include modbus_systemair.yml
+
+
+# camera
+#camera: 
+#  - platform: generic
+#    stream_source: !secret hik_addres_pass
+#    authentication: basic
+
+mqtt:
+
+#vacuum:
+#  - platform: viomi_vacuum_v8
+#    host: 192.168.1.55
+#    token: !secret xiaomi_token
+#    name: 'Rydwan'
+
+input_number:
+  gas_meter_m3:
+    name: Gas Meter Reading
+    min: 0
+    max: 999999
+    step: 0.01
+    unit_of_measurement: m³
+    mode: box
+    icon: 'mdi:fire'
+  water_meter_m3:
+    name: Water Meter Reading
+    min: 0
+    max: 999999
+    step: 0.01
+    unit_of_measurement: m³
+    mode: box
+    icon: 'mdi:water'
+
+utility_meter:
+  gas_house:
+    source: input_number.gas_meter_m3
+    name: gas_meter
+    unique_id: gas_meter_uniqueid
+  water_house:
+    source: input_number.water_meter_m3
+    name: water_meter
+    unique_id: water_meter_uniqueid
+
+template:
+  - sensor:
+    - name: 'Gas Total'
+      device_class: gas
+      unit_of_measurement: m³
+      unique_id: gas_meter_uniqueid_template
+      state: "{{ state('input_number.gas_meter_m3') }}"
+      state_class: measurement
+    - name: 'Water Total'
+      device_class: water
+      unit_of_measurement: m³
+      unique_id: water_meter_uniqueid_template
+      state: "{{ state('input_number.water_meter_m3') }}"
+      state_class: measurement
+
+sensor:
+  - platform: template
+    sensors:
+      energy_produced_total:
+        friendly_name: "Nazwa Sensora"
+        unique_id: energy_produced_total_uniqueid
+        value_template: "{{ states('input_number.energy_meter_kwh') }}"
+
+  - platform: template
+    sensors:
+      bateria:
+        friendly_name: "Bateria akumulatorów"
+        unique_id: battery_voltage
+        unit_of_measurement: "V"
+        value_template: "{{ '%0.1f'|format(states('sensor.a0_a1_voltage')|float * 11.89189) }}"
+my:

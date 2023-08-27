@@ -1,39 +1,26 @@
 - id: '1647813687807'
   alias: Wilgotnośc +65% Reku odśwież
   description: ''
-  trigger:
-  - type: humidity
-    platform: device
-    device_id: 3604db52f6e50ba9d1b95ec5bfe350e8
-    entity_id: sensor.lumi_lumi_weather_dc043202_humidity
-    domain: sensor
+  trigger: []
+  condition:
+  - condition: numeric_state
+    entity_id: sensor.wilgotnosc_powietrza_usuwanego
     above: 65
-    for:
-      hours: 0
-      minutes: 1
-      seconds: 0
-  condition: []
   action:
   - type: turn_on
     device_id: 116a87afa99d07bf350214bd934fd124
     entity_id: light.tz3000_excgg5kb_ts0004_d23f25cf_on_off
     domain: light
+    flash: short
   mode: single
 - id: '1647813829865'
   alias: Wilgotność -63% Reku wyłącz odśwież
   description: ''
-  trigger:
-  - type: humidity
-    platform: device
-    device_id: 3604db52f6e50ba9d1b95ec5bfe350e8
-    entity_id: sensor.lumi_lumi_weather_dc043202_humidity
-    domain: sensor
+  trigger: []
+  condition:
+  - condition: numeric_state
+    entity_id: sensor.wilgotnosc_powietrza_usuwanego
     below: 63
-    for:
-      hours: 0
-      minutes: 1
-      seconds: 0
-  condition: []
   action:
   - type: turn_off
     device_id: 116a87afa99d07bf350214bd934fd124
@@ -69,6 +56,10 @@
     device_id: 116a87afa99d07bf350214bd934fd124
     entity_id: light.tz3000_excgg5kb_ts0004_d23f25cf_on_off
     domain: light
+  - type: turn_off
+    device_id: 5c260f952745c586e5989b3b33820d12
+    entity_id: 951554369bd73df8a3dd7bf29a4a6048
+    domain: switch
   mode: single
 - id: '1662314112321'
   alias: Pilot Hue 30min
@@ -95,6 +86,69 @@
     subtype: dim_down
   condition: []
   action:
+  - type: toggle
+    device_id: 5c260f952745c586e5989b3b33820d12
+    entity_id: 951554369bd73df8a3dd7bf29a4a6048
+    domain: switch
   - service: script.odswiez_15min
     data: {}
+  mode: single
+- id: '1691925169451'
+  alias: Wyłącz grzanie wody gdy włączona jest pralka/suszarka
+  description: ''
+  trigger:
+  - type: power
+    platform: device
+    device_id: 88b2cf67986fe6f6ac34bbc818b7f5bb
+    entity_id: a05ae42a8f65bec558e69c26919af7f5
+    domain: sensor
+    above: 10
+  condition: []
+  action:
+  - type: turn_off
+    device_id: 32fc5cb5201aea13d004eb8ce85addc3
+    entity_id: ad8023a85e1c9e812e9999f5e0eab28b
+    domain: switch
+  mode: single
+- id: '1692796334113'
+  alias: Włącz grzanie wody
+  description: ''
+  trigger:
+  - type: energy
+    platform: device
+    device_id: f46dd192419cd043a4c9300b36e8abfc
+    entity_id: d61b8d62caaa4f1736fb6c3ed7d90d24
+    domain: sensor
+    above: 1600
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 5
+  condition: []
+  action:
+  - type: turn_on
+    device_id: 32fc5cb5201aea13d004eb8ce85addc3
+    entity_id: ad8023a85e1c9e812e9999f5e0eab28b
+    domain: switch
+  mode: single
+- id: '1692796395327'
+  alias: Wyłącz grzanie wody
+  description: ''
+  trigger:
+  - type: power
+    platform: device
+    device_id: f46dd192419cd043a4c9300b36e8abfc
+    entity_id: 324b9774eed5d1419600941f79f52c67
+    domain: sensor
+    above: 200
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 5
+  condition: []
+  action:
+  - type: turn_off
+    device_id: 32fc5cb5201aea13d004eb8ce85addc3
+    entity_id: ad8023a85e1c9e812e9999f5e0eab28b
+    domain: switch
   mode: single
