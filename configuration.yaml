@@ -1,5 +1,13 @@
+http:
+  server_port: 80
+
 # Configure a default setup of Home Assistant (frontend, api, etc)
 default_config:
+
+frontend:
+  themes: !include_dir_merge_named themes
+
+panel_custom: !include panel_custom.yaml
 
 # Text to speech
 ##  - platform: google_translate
@@ -15,7 +23,7 @@ modbus:
   host: 192.168.1.8
   port: 502
   name: "VTR300"
-  sensors: !include modbus_systemair.yml
+  #sensors: !include modbus_systemair.yml
 
 
 # camera
@@ -60,29 +68,22 @@ utility_meter:
     name: water_meter
     unique_id: water_meter_uniqueid
 
-template:
-  - sensor:
-    - name: 'Gas Total'
-      device_class: gas
-      unit_of_measurement: m³
-      unique_id: gas_meter_uniqueid_template
-      state: "{{ state('input_number.gas_meter_m3') }}"
-      state_class: measurement
-    - name: 'Water Total'
-      device_class: water
-      unit_of_measurement: m³
-      unique_id: water_meter_uniqueid_template
-      state: "{{ state('input_number.water_meter_m3') }}"
-      state_class: measurement
+# template:
+#   - sensor:
+#     - name: 'Gas Total'
+#       device_class: gas
+#       unit_of_measurement: m³
+#       unique_id: gas_meter_uniqueid_template
+#       state: "{{ state('input_number.gas_meter_m3') }}"
+#       state_class: measurement
+#     - name: 'Water Total'
+#       device_class: water
+#       unit_of_measurement: m³
+#       unique_id: water_meter_uniqueid_template
+#       state: "{{ state('input_number.water_meter_m3') }}"
+#       state_class: measurement
 
 sensor:
-  - platform: template
-    sensors:
-      energy_produced_total:
-        friendly_name: "Nazwa Sensora"
-        unique_id: energy_produced_total_uniqueid
-        value_template: "{{ states('input_number.energy_meter_kwh') }}"
-
   - platform: template
     sensors:
       bateria:
@@ -90,4 +91,5 @@ sensor:
         unique_id: battery_voltage
         unit_of_measurement: "V"
         value_template: "{{ '%0.1f'|format(states('sensor.a0_a1_voltage')|float * 11.89189) }}"
+
 my:

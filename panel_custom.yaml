@@ -1,0 +1,76 @@
+#Add this to your configuration.yaml
+
+  - name: server_control
+    sidebar_title: Server Control
+    sidebar_icon: mdi:cog-transfer
+    js_url: /api/hassio/app/entrypoint.js
+    url_path: "developer-tools/yaml"
+    embed_iframe: true
+    require_admin: true
+    config:
+      ingress: core_configurator
+#YAML
+#Add-ons Shortcut (previously Supervisor)
+#Add this to your configuration.yaml
+#panel_custom:
+  - name: addons
+    sidebar_title: Addons
+    sidebar_icon: mdi:cog-transfer
+    js_url: /api/hassio/app/entrypoint.js
+    url_path: "hassio/dashboard"
+    embed_iframe: true
+    require_admin: true
+    config:
+      ingress: core_configurator
+#YAML
+#Integrations Shortcut
+#Add this to your configuration.yaml
+#panel_custom:
+  - name: integrations
+    sidebar_title: Integrations
+    sidebar_icon: mdi:cog-outline
+    js_url: /api/hassio/app/entrypoint.js
+    url_path: "config/integrations"
+    embed_iframe: true
+    require_admin: true
+    config:
+      ingress: core_configurator
+#YAML
+#Automations Shortcut
+#Add this to your configuration.yaml
+#panel_custom:
+  - name: automations
+    sidebar_title: Automations
+    sidebar_icon: mdi:arrow-decision
+    js_url: /api/hassio/app/entrypoint.js
+    url_path: "config/automation/dashboard"
+    embed_iframe: true
+    require_admin: true
+    config:
+      ingress: core_configurator
+#YAML
+#Logs Shortcut
+##Add this to your configuration.yaml
+#panel_custom:
+  - name: logs
+    sidebar_title: Logs
+    sidebar_icon: mdi:post
+    js_url: /api/hassio/app/entrypoint.js
+    url_path: "config/logs"
+    embed_iframe: true
+    require_admin: true
+    config:
+      ingress: core_configurator
+#YAML
+#Updates Shortcut
+#Add this to your configuration.yaml
+#panel_custom:
+  - name: updates
+    sidebar_title: Updates
+    sidebar_icon: mdi:update
+    js_url: /api/hassio/app/entrypoint.js
+    url_path: "config/updates"
+    embed_iframe: true
+    require_admin: true
+    config:
+      ingress: core_configurator
